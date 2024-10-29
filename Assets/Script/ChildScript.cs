@@ -24,9 +24,7 @@ public class ChildScript : MonoBehaviour
         }
         else
         {
-            childWaiting = true;
-            childWaitingTimer = waitingTime;
-            Debug.Log("THE CHILD IS WAITING !!!");
+            Waiting();
         }
         if (childWaitingTimer > 0)
         {
@@ -34,9 +32,19 @@ public class ChildScript : MonoBehaviour
         }
         else
         {
-            childWaiting = false;
-            Debug.Log("THE CHILD IS NO LONGER WAITING.");
-            childTimer = Random.Range(minTime, maxTime);
+            NotWaiting();
         }
+    }
+    public void Waiting()
+    {
+        childWaiting = true;
+        childWaitingTimer = waitingTime;
+        Debug.Log("THE CHILD IS WAITING !!!");
+    }
+    public void NotWaiting()
+    {
+        childWaiting = false;
+        childTimer = Random.Range(minTime, maxTime);
+        Debug.Log("THE CHILD IS NO LONGER WAITING.");
     }
 }
