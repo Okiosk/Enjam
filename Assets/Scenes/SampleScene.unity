@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 296017149}
-  speed: 400
+  speed: 800
 --- !u!212 &296017147
 SpriteRenderer:
   m_ObjectHideFlags: 0

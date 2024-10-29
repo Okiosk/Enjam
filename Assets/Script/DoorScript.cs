@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour
@@ -14,7 +13,6 @@ public class DoorScript : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("F to Interact");
