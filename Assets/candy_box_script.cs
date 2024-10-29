@@ -14,6 +14,10 @@ public class candy_box_script : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("qdhsdg");
+        Debug.Log("sdbdfbwdfvvvvvvvvvvvvvvvvvvvvvvvvvvvbdq");
+        if (Input.GetButtonDown("space"))
+        {
+            Debug.Log("qdhsdg");
+        }
     }
 }
