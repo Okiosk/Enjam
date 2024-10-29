@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,8 +14,9 @@ public class DoorScript : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("F to Interact");
+        if (collision.name == "Player")
+            Debug.Log("Space to Interact");
     }
 }
