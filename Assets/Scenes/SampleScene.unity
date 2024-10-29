@@ -266,6 +266,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: candy box
       objectReference: {fileID: 0}
+    - target: {fileID: 3711887092734187837, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
+      propertyPath: ui
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711887092734187837, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
+      propertyPath: typeCandy
+      value: orange
+      objectReference: {fileID: 0}
+    - target: {fileID: 3711887092734187837, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
+      propertyPath: iconeCandy
+      value: 
+      objectReference: {fileID: 4941240919024178222, guid: ba28fd749193b274884c6824e0cbc7a5, type: 3}
     - target: {fileID: 6529320485182622691, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.78
