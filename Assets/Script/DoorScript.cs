@@ -4,10 +4,10 @@ public class DoorScript : MonoBehaviour
 {
     private bool playerOnDoor = false;
     private bool isOpen = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public ChildScript child;
     void Start()
     {
-        
+        child = ;
     }
 
     // Update is called once per frame
@@ -35,6 +35,9 @@ public class DoorScript : MonoBehaviour
     private void ChangeDoorState()
     {
         isOpen = !isOpen;
-        Debug.Log("Door open state is "+isOpen.ToString());
+        if (isOpen)
+        {
+
+        }
     }
 }
