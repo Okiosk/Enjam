@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
-    
+    private bool isOpen = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +17,10 @@ public class DoorScript : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.name == "Player")
-            Debug.Log("Space to Interact");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                isOpen = !isOpen;
+                Debug.Log("Door open is "+isOpen.ToString());
+            }
     }
 }
