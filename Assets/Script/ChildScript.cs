@@ -7,43 +7,45 @@ public class ChildScript : MonoBehaviour
     private float childTimer = 0;
     private int waitingTime = 5;
     private float childWaitingTimer = 0;
-    public bool childWaiting = false;
+    public bool childIsWaiting = false;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (childTimer > 0)
-        {
-            childTimer -= 1 * Time.deltaTime;
+        if (!childIsWaiting)
+        {    if (childTimer > 0)
+            {
+                childTimer -= 1 * Time.deltaTime;
+            }
+            else
+            {
+                Waiting();
+            }
         }
         else
-        {
-            Waiting();
-        }
-        if (childWaitingTimer > 0)
-        {
-            childWaitingTimer -= 1 * Time.deltaTime;
-        }
-        else
-        {
-            NotWaiting();
+        {    if (childWaitingTimer > 0)
+            {
+                childWaitingTimer -= 1 * Time.deltaTime;
+            }
+            else
+            {
+                NotWaiting();
+            }
         }
     }
     public void Waiting()
     {
-        childWaiting = true;
+        childIsWaiting = true;
         childWaitingTimer = waitingTime;
         Debug.Log("THE CHILD IS WAITING !!!");
     }
     public void NotWaiting()
     {
-        childWaiting = false;
+        childIsWaiting = false;
         childTimer = Random.Range(minTime, maxTime);
         Debug.Log("THE CHILD IS NO LONGER WAITING.");
     }

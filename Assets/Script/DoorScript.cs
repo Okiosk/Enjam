@@ -10,7 +10,6 @@ public class DoorScript : MonoBehaviour
         child = GameObject.FindGameObjectWithTag("Child").GetComponent<ChildScript>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playerOnDoor && Input.GetKeyDown(KeyCode.Space))
@@ -37,7 +36,7 @@ public class DoorScript : MonoBehaviour
         isOpen = !isOpen;
         if (isOpen)
         {
-            if (child.childWaiting)
+            if (child.childIsWaiting)
             {
                 child.NotWaiting();
             }
