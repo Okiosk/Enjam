@@ -4,6 +4,7 @@ public class DoorScript : MonoBehaviour
 {
     private bool playerOnDoor = false;
     private bool isOpen = false;
+    private int screamerProbability = 10;
     public ChildScript child;
     public PlayerScript player;
     void Start()
@@ -44,7 +45,15 @@ public class DoorScript : MonoBehaviour
             }
             else
             {
-                
+                if (Random.Range(0, screamerProbability) == 0)
+                {
+                    //display the screamer
+                    //play the sound
+                }
+                else
+                {
+                    //nothing append
+                }
             }
         }
     }

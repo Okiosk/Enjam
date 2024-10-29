@@ -8,10 +8,11 @@ public class ChildScript : MonoBehaviour
     private int waitingTime = 5;
     private float childWaitingTimer = 0;
     public bool childIsWaiting = false;
+    public DoorScript door;
     
     void Start()
     {
-        
+        door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
     }
 
     void Update()
@@ -23,6 +24,7 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
+                
                 Waiting();
             }
         }
