@@ -24,8 +24,10 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
-                
-                Waiting();
+                if (!door.isOpen)
+                {
+                    Waiting();
+                }
             }
         }
         else

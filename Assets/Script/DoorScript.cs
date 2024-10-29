@@ -3,14 +3,12 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     private bool playerOnDoor = false;
-    private bool isOpen = false;
+    public bool isOpen = false;
     private int screamerProbability = 10;
     public ChildScript child;
-    public PlayerScript player;
     void Start()
     {
         child = GameObject.FindGameObjectWithTag("Child").GetComponent<ChildScript>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
     }
 
     void Update()
