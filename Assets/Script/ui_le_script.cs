@@ -1,10 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ui_le_script : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Sprite icone1;
+    public Sprite icone2;
+    public Sprite icone3;
+    public Sprite icone4;
+    public GameObject icone;
     public void changeIcone(string name)
     {
-        Debug.Log(name);
+        if (name == "orange")
+        {
+            icone.GetComponent<Image>().sprite = icone1;
+        }
+        if (name == "vert")
+        {
+            icone.GetComponent<Image>().sprite = icone2;
+        }
+        if (name == "bleu")
+        {
+            icone.GetComponent<Image>().sprite = icone3;
+        }
+        if (name == "rose")
+        {
+            icone.GetComponent<Image>().sprite = icone4;
+        }
     }
 }
