@@ -12,7 +12,7 @@ public class uiScript : MonoBehaviour
         //icone.GetComponent<Image>().sprite;
     }
     public void changeIcone(string iconeType)
-    { 
+    {
         Debug.Log(iconeType);
     }
 }
