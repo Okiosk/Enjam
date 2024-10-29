@@ -1,10 +1,13 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 public class candy_box_script : MonoBehaviour
 {
 
     public string typeCandy;
     public GameObject ui;
+    public Sprite iconeCandy;
 
     private bool playerIn = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +23,7 @@ public class candy_box_script : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("qdhsdg");
+                Debug.Log("qdb");
             }
         }
     }
