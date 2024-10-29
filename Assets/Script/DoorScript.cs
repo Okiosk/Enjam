@@ -35,6 +35,6 @@ public class DoorScript : MonoBehaviour
     private void ChangeDoorState()
     {
         isOpen = !isOpen;
-        Debug.Log("Door open is "+isOpen.ToString());
+        Debug.Log("Door open state is "+isOpen.ToString());
     }
 }
