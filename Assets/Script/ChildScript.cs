@@ -8,7 +8,7 @@ public class ChildScript : MonoBehaviour
     private int waitingTime = 5;
     private float childWaitingTimer = 0;
     public bool childIsWaiting = false;
-    private string[] colors = {"orange","vert","bleu","rose"};
+    private string[] colors = {"orange","green","blue","pink"};
     public string color = "";
     private bool mad = false;
     private int madProbability = 10;
@@ -49,14 +49,23 @@ public class ChildScript : MonoBehaviour
     {
         childIsWaiting = true;
         childWaitingTimer = waitingTime;
-        color = colors[Random.Range(0, colors.Length)];
-        Debug.Log("THE "+ color +" CHILD IS WAITING !!!");
+        if (Random.Range(0, madProbability) == 0)
+        {
+            mad = true;
+            Debug.Log("THE MAD CHILD IS WAITING !!!");
+        }
+        else
+        {
+            color = colors[Random.Range(0, colors.Length)];
+            Debug.Log("THE "+ color +" CHILD IS WAITING !!!");
+        }
     }
     public void NotWaiting()
     {
         childIsWaiting = false;
         childTimer = Random.Range(minTime, maxTime);
         color = "";
+        mad = false;
         Debug.Log("THE "+color+" CHILD IS NO LONGER WAITING.");
     }
 }
