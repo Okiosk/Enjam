@@ -7,12 +7,13 @@ public class candy_box_script : MonoBehaviour
 
     public string typeCandy;
     public GameObject ui;
+    private ChildScript uiScript;
 
     private bool playerIn = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        uiScript = GameObject.FindGameObjectWithTag("UI").GetComponent<ChildScript>();
     }
 
     // Update is called once per frame
