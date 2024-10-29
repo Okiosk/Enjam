@@ -5,12 +5,7 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rigidBody;
     public float speed;
     private float[] velocity = {0,0};
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    public string candyCarry = "none";
     // Update is called once per frame
     void Update()
     {
