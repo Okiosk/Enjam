@@ -22,7 +22,7 @@ public class candy_box_script : MonoBehaviour
     {
         if (playerIn) 
         {
-            if (Input.GetKeyDown(KeyCode.Space) && pScript.candyCarry == "none")
+            if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy == "none"))
             {
                 pScript.candyCarry = typeCandy;
                 uiScript.changeIcone(typeCandy);
