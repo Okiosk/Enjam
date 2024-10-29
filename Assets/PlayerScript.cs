@@ -19,20 +19,20 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            velocity[0] += 1;
+            velocity[0] += speed;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            velocity[0] -= 1;
+            velocity[0] -= speed;
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            velocity[1] += 1;
+            velocity[1] += speed;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            velocity[1] -= 1;
+            velocity[1] -= speed;
         }
-        rigidBody.linearVelocity = new Vector2(velocity[0], velocity[1]);
+        rigidBody.linearVelocity = new Vector2(velocity[0], velocity[1]) * Time.deltaTime;
     }
 }
