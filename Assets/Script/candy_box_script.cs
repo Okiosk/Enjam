@@ -6,14 +6,13 @@ public class candy_box_script : MonoBehaviour
 {
 
     public string typeCandy;
-    public GameObject ui;
-    private ChildScript uiScript;
+    private ui_le_script uiScript;
 
     private bool playerIn = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        uiScript = GameObject.FindGameObjectWithTag("UI").GetComponent<ChildScript>();
+        uiScript = GameObject.FindGameObjectWithTag("UI").GetComponent<ui_le_script>();
     }
 
     // Update is called once per frame
@@ -23,7 +22,7 @@ public class candy_box_script : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("qdb");
+                uiScript.changeIcone(typeCandy);
             }
         }
     }
