@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour
     public float speed;
     private float[] velocity = {0,0};
     public string candyCarry = "none";
+    public bool isDead = false;
     // Update is called once per frame
     void Update()
     {

@@ -1,38 +1,37 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ui_le_script : MonoBehaviour
 {
-    public Sprite icone1;
-    public Sprite icone2;
-    public Sprite icone3;
-    public Sprite icone4;
-    public GameObject icone;
-    public void changeIcone(string name)
+    public Sprite icon1;
+    public Sprite icon2;
+    public Sprite icon3;
+    public Sprite icon4;
+    public GameObject icon;
+    public void changeIcon(string name)
     {
-        if (name == "orange")
+        switch (name)
         {
-            icone.GetComponent<Image>().color = new Color(255, 255, 255, 255);
-            icone.GetComponent<Image>().sprite = icone1;
-        }
-        if (name == "vert")
-        {
-            icone.GetComponent<Image>().color = new Color(255, 255, 255, 255);
-            icone.GetComponent<Image>().sprite = icone2;
-        }
-        if (name == "bleu")
-        {
-            icone.GetComponent<Image>().color = new Color(255, 255, 255, 255);
-            icone.GetComponent<Image>().sprite = icone3;
-        }
-        if (name == "rose")
-        {
-            icone.GetComponent<Image>().color = new Color(255, 255, 255, 255);
-            icone.GetComponent<Image>().sprite = icone4;
-        }
-        if (name == "none")
-        {
-            icone.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+            case "orange":
+                icon.GetComponent<Image>().color = new Color(255, 255, 255, 255);
+                icon.GetComponent<Image>().sprite = icon1;
+                break;
+            case "green":
+                icon.GetComponent<Image>().color = new Color(255, 255, 255, 255);
+                icon.GetComponent<Image>().sprite = icon2;
+                break;
+            case "blue":
+                icon.GetComponent<Image>().color = new Color(255, 255, 255, 255);
+                icon.GetComponent<Image>().sprite = icon3;
+                break;
+            case "pink":
+                icon.GetComponent<Image>().color = new Color(255, 255, 255, 255);
+                icon.GetComponent<Image>().sprite = icon4;
+                break;
+            case "none":
+                icon.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+                break;
         }
     }
 }
