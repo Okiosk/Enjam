@@ -85,12 +85,10 @@ public class ChildScript : MonoBehaviour
     {
         if (!mad)
         {
-            Debug.Log("The child is going mad !");
             if (!playerLoosedLife)
             {
                 madProbability -= 1;
                 playerLoosedLife = true;
-                Debug.Log("YOU LOOSED ONE LIFE !");
             }
             if (door.isOpen)
             {
@@ -112,18 +110,15 @@ public class ChildScript : MonoBehaviour
         }
         else if (player.candyCarry == color)
         {      
-            Debug.Log("You gived the good candy to the child !");   
             minTime -= 1;
             ResetWaitingVars();
         }
         else
         {
-            Debug.Log("You gived the wrong candy to the child !");
             if (!playerLoosedLife)
             {
                 madProbability -= 1;
                 playerLoosedLife = true;
-                Debug.Log("YOU LOOSED ONE LIFE !");
             }
             return false;
         }
