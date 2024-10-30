@@ -36,6 +36,7 @@ public class PlayerScript : MonoBehaviour
 
             if (Input.GetKey(KeyCode.RightArrow))
             {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;  
                 velocity[0] += speed;
                 animator.SetBool("moving", true);
                 animator.SetFloat("lastDirX", velocity[0]);
@@ -43,6 +44,7 @@ public class PlayerScript : MonoBehaviour
             }   
             if (Input.GetKey(KeyCode.LeftArrow))
             {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
                 velocity[0] -= speed;
                 animator.SetBool("moving", true);
                 animator.SetFloat("lastDirX", velocity[0]);
