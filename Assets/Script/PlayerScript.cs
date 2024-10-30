@@ -9,9 +9,17 @@ public class PlayerScript : MonoBehaviour
     private float[] velocity = {0,0};
     public string candyCarry = "none";
     public int lives = 5;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
+    public GameObject heart4;
+    public GameObject heart5;
     public bool isDead = false;
     public bool inQTE = false;
-    // Update is called once per frame
+    void Start()
+    {
+        
+    }
     void Update()
     {
         if (lives <= 0)

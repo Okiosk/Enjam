@@ -72,9 +72,7 @@ public class DoorScript : MonoBehaviour
                 doorTimer = maxDoorTimer;
                 ChangeDoorState();
             }
-        }
-        
-
+        }   
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
