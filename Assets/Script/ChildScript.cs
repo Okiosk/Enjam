@@ -13,10 +13,12 @@ public class ChildScript : MonoBehaviour
     private bool mad = false;
     private int madProbability = 10;
     public DoorScript door;
+    public PlayerScript player;
     
     void Start()
     {
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
     }
 
     void Update()
@@ -41,7 +43,7 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
-                NotWaiting();
+                NotWaiting(false);
             }
         }
     }
@@ -60,12 +62,19 @@ public class ChildScript : MonoBehaviour
             Debug.Log("THE "+ color +" CHILD IS WAITING !!!");
         }
     }
-    public void NotWaiting()
+    public void NotWaiting(bool opened)
     {
+        if (opened && mad)
+        {
+            Debug.Log("YOU DIED !");
+        }
+        else      
+        {
+            Debug.Log("THE "+color+" CHILD IS NO LONGER WAITING.");
+        }
         childIsWaiting = false;
         childTimer = Random.Range(minTime, maxTime);
-        color = "";
         mad = false;
-        Debug.Log("THE "+color+" CHILD IS NO LONGER WAITING.");
+        color = "none";
     }
 }

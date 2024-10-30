@@ -39,7 +39,7 @@ public class DoorScript : MonoBehaviour
         {
             if (child.childIsWaiting)
             {
-                child.NotWaiting();
+                child.NotWaiting(true);
             }
             else
             {
