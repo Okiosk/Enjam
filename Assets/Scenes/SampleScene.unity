@@ -377,10 +377,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22a88e4ba93fa241a39c6212fdc871f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon1: {fileID: 4941240919024178222, guid: ba28fd749193b274884c6824e0cbc7a5, type: 3}
-  icon2: {fileID: 8573491201283763856, guid: 13548621e4fd2364bb0f0bbcea738c23, type: 3}
-  icon3: {fileID: -790410345991088130, guid: 9b30e48646093174096e112f05e8a6f0, type: 3}
-  icon4: {fileID: 3359845295696628580, guid: f93739d2b6f646a4bb09ad9c2564ef9a, type: 3}
+  icon1: {fileID: 6806319151018940423, guid: 7427479b4cf5e2a4c81d4979ef800056, type: 3}
+  icon2: {fileID: -5521134058205177756, guid: 761141677d9091e4fbdfa86f7366e39c, type: 3}
+  icon3: {fileID: -103420702326443323, guid: dceece3c302692144a7b96f02551c935, type: 3}
+  icon4: {fileID: 841253746147738118, guid: ccbf67ef3c6723d43b09c7fac642fcec, type: 3}
   icon: {fileID: 266455135}
 --- !u!1001 &138880541
 PrefabInstance:
@@ -672,6 +672,7 @@ MonoBehaviour:
   candyCarry: none
   lives: 5
   isDead: 0
+  inQTE: 0
 --- !u!212 &296017147
 SpriteRenderer:
   m_ObjectHideFlags: 0
