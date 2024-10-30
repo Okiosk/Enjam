@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+
+    public Animator animator;
     public Rigidbody2D rigidBody;
     public float speed;
     private float[] velocity = {0,0};
@@ -32,6 +34,7 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 velocity[1] += speed;
+                animator.SetBool("anim_walk_face", true);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
