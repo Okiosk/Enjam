@@ -27,7 +27,7 @@ public class candy_box_script : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy == "none"))
             {
-                camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
+                //camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
                 pScript.candyCarry = typeCandy;
                 uiScript.changeIcon(typeCandy);
             }
