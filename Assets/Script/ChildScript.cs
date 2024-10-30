@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ChildScript : MonoBehaviour
@@ -9,7 +10,7 @@ public class ChildScript : MonoBehaviour
     private float childWaitingTimer;
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
-    public string color = "";
+    private string color = "";
     private bool mad = false;
     private int madProbability = 10;
     public DoorScript door;
@@ -77,20 +78,24 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
-                if (player.candyCarry == color)
+                if (player.candyCarry == "none")
                 {
-                    ResetWaitingVars();
+                    Debug.Log("I have nothing to give.");
+                }
+                else if (player.candyCarry == color)
+                {
+                    
                     Debug.Log("You gived the good candy to the child !");
+                    door.isOpen = false;
+                    player.candyCarry = "none";
+                    _ui.changeIcon("none");
+                    minTime -= 1;
+                    ResetWaitingVars();
                 }
                 else
                 {
-                    ResetWaitingVars();
                     Debug.Log("You gived the wrong candy to the child !");
                 }
-                door.isOpen = false;
-                player.candyCarry = "none";
-                _ui.changeIcon("none");
-                minTime -= 1;
             }
         }
         else      
@@ -99,15 +104,16 @@ public class ChildScript : MonoBehaviour
             {
                 Debug.Log("The "+color+" child is going mad !");
                 madProbability -= 1;
+                ResetWaitingVars();
             }
             else
             {
                 Debug.Log("The mad child is gone.");
+                ResetWaitingVars();
             }
         }
-        ResetWaitingVars();
     }
-    public void ResetWaitingVars()
+    private void ResetWaitingVars()
     {
         childIsWaiting = false;
         mad = false;
