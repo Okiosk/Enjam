@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 16f431d72962b704a8c3ec8641f82fd3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3298266553987177407
+    second: Qte grandma screen v1_0
+  - first:
+      213: 4453297546153657855
+    second: Qte grandma screen v1_1
+  - first:
+      213: 8818436009172653976
+    second: Qte grandma screen v1_2
+  - first:
+      213: 6154184755525301651
+    second: Qte grandma screen v1_3
+  - first:
+      213: 2439034478489986126
+    second: Qte grandma screen v1_4
+  - first:
+      213: 6624472980797252674
+    second: Qte grandma screen v1_5
+  - first:
+      213: 1863077263810539269
+    second: Qte grandma screen v1_6
+  - first:
+      213: -4457847614311075704
+    second: Qte grandma screen v1_7
+  - first:
+      213: -6167165428376290284
+    second: Qte grandma screen v1_8
+  - first:
+      213: -755342688364043171
+    second: Qte grandma screen v1_9
+  - first:
+      213: -6132755727626423294
+    second: Qte grandma screen v1_10
+  - first:
+      213: -9117603543609585253
+    second: Qte grandma screen v1_11
+  - first:
+      213: -7459087394387700362
+    second: Qte grandma screen v1_12
+  - first:
+      213: 5657846072141904322
+    second: Qte grandma screen v1_13
+  - first:
+      213: -7581895503537885221
+    second: Qte grandma screen v1_14
+  - first:
+      213: 1590955311090106180
+    second: Qte grandma screen v1_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Qte grandma screen v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 151
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144ea0b4b043a32d0800000000000000
+      internalID: -3298266553987177407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 108
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff58b9d068a4dcd30800000000000000
+      internalID: 4453297546153657855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 111
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897df3904d0616a70800000000000000
+      internalID: 8818436009172653976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 111
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395b53bcd6e086550800000000000000
+      internalID: 6154184755525301651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 111
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4463558fe039d120800000000000000
+      internalID: 2439034478489986126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 111
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244e79cf31bdeeb50800000000000000
+      internalID: 6624472980797252674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 111
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fa88286eafad910800000000000000
+      internalID: 1863077263810539269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_7
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 111
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8807a26a63b8222c0800000000000000
+      internalID: -4457847614311075704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 111
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41cbf8ac7b3d96aa0800000000000000
+      internalID: -6167165428376290284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_9
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 111
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d546f50b3db7485f0800000000000000
+      internalID: -755342688364043171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 111
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204b590982314eaa0800000000000000
+      internalID: -6132755727626423294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 44
+        width: 53
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91de4c52e3c77180800000000000000
+      internalID: -9117603543609585253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 44
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6755de4e88ffb7890800000000000000
+      internalID: -7459087394387700362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 68
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c97bdba605b48e40800000000000000
+      internalID: 5657846072141904322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_14
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 44
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf2e7bc532b7c690800000000000000
+      internalID: -7581895503537885221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Qte grandma screen v1_15
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 44
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ffb0b1d65341610800000000000000
+      internalID: 1590955311090106180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Qte grandma screen v1_0: -3298266553987177407
+      Qte grandma screen v1_1: 4453297546153657855
+      Qte grandma screen v1_10: -6132755727626423294
+      Qte grandma screen v1_11: -9117603543609585253
+      Qte grandma screen v1_12: -7459087394387700362
+      Qte grandma screen v1_13: 5657846072141904322
+      Qte grandma screen v1_14: -7581895503537885221
+      Qte grandma screen v1_15: 1590955311090106180
+      Qte grandma screen v1_2: 8818436009172653976
+      Qte grandma screen v1_3: 6154184755525301651
+      Qte grandma screen v1_4: 2439034478489986126
+      Qte grandma screen v1_5: 6624472980797252674
+      Qte grandma screen v1_6: 1863077263810539269
+      Qte grandma screen v1_7: -4457847614311075704
+      Qte grandma screen v1_8: -6167165428376290284
+      Qte grandma screen v1_9: -755342688364043171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,12 +9,16 @@ public class candy_box_script : MonoBehaviour
 
     public string typeCandy;
     public TextMeshProUGUI uiGO;
+    public Animator animator;
 
     private ui_le_script uiScript;
     private PlayerScript pScript;
     private camera_script camera;
     private bool inQTE = false;
     private int avancementQTE = 0;
+
+    private bool start_timer = false;
+    private float timer = 0;
 
     private int qte1 = 0;
     private int qte2 = 0;
@@ -83,14 +87,25 @@ public class candy_box_script : MonoBehaviour
         uiScript = GameObject.FindGameObjectWithTag("UI").GetComponent<ui_le_script>();
         pScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<camera_script>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (start_timer)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer > 1)
+        {
+            print("gegFQFCC");
+            animator.SetBool("anim_play", false);
+        }
+
+
         if (playerIn && !inQTE) 
         {
+
             // Boite de bonbon
             if (Input.GetKeyDown(KeyCode.Space) && pScript.candyCarry == "none" && typeCandy != "none")
             {
@@ -141,6 +156,9 @@ public class candy_box_script : MonoBehaviour
                 inQTE = false;
                 pScript.inQTE = false;
                 avancementQTE = 0;
+                timer = 0;
+                start_timer = true;
+                animator.SetBool("anim_play",true);
             }
 
         }
