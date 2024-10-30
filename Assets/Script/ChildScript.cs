@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ChildScript : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class ChildScript : MonoBehaviour
     public DoorScript door;
     public PlayerScript player;
     public ui_le_script _ui;
+    public GameObject greenCandy;
+    public GameObject CanneCandy;
+    public GameObject DonutCandy;
+    public GameObject sucetteCandy;
     
     void Start()
     {
@@ -72,6 +77,21 @@ public class ChildScript : MonoBehaviour
         else
         {
             color = colors[Random.Range(0, colors.Length)];
+            switch (color)
+            {
+                case "orange":
+                    sucetteCandy.SetActive(true);
+                    break;
+                case "pink":
+                    DonutCandy.SetActive(true);
+                    break;
+                case "blue":
+                    CanneCandy.SetActive(true);
+                    break;
+                case "green":
+                    greenCandy.SetActive(true);
+                    break;
+            }
             Debug.Log("The "+ color +" child is waiting !");
         }
     }
