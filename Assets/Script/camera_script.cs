@@ -59,6 +59,7 @@ public class camera_script : MonoBehaviour
         target.x = x;
         target.y = y;
         target.z = -10;
+        print("zoom");
     }
     public void unzoom()
     {
@@ -66,5 +67,6 @@ public class camera_script : MonoBehaviour
         target.x = 0;
         target.y = 0;
         target.z = -10;
+        print("dezoom");
     }
 }
