@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class ChildScript : MonoBehaviour
@@ -77,7 +78,11 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
-                if (player.candyCarry == color)
+                if (player.candyCarry == "none")
+                {
+                    Debug.Log("I have nothing to give.");
+                }
+                else if (player.candyCarry == color)
                 {
                     ResetWaitingVars();
                     Debug.Log("You gived the good candy to the child !");
