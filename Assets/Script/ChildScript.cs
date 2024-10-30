@@ -88,6 +88,7 @@ public class ChildScript : MonoBehaviour
             if (!playerLoosedLife)
             {
                 madProbability -= 1;
+                player.lives -= 1;
                 playerLoosedLife = true;
             }
             if (door.isOpen)
@@ -118,6 +119,7 @@ public class ChildScript : MonoBehaviour
             if (!playerLoosedLife)
             {
                 madProbability -= 1;
+                player.lives -= 1;
                 playerLoosedLife = true;
             }
             return false;
