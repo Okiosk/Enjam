@@ -670,6 +670,7 @@ MonoBehaviour:
   rigidBody: {fileID: 296017149}
   speed: 1500
   candyCarry: none
+  lives: 5
   isDead: 0
 --- !u!212 &296017147
 SpriteRenderer:

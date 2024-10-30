@@ -13,6 +13,7 @@ public class ChildScript : MonoBehaviour
     private string color = "";
     private bool mad = false;
     private int madProbability = 10;
+    private bool playerLoosedLife = false;
     public DoorScript door;
     public PlayerScript player;
     public ui_le_script _ui;
@@ -30,7 +31,8 @@ public class ChildScript : MonoBehaviour
     void Update()
     {
         if (!childIsWaiting)
-        {    if (childTimer > 0)
+        {   
+            if (childTimer > 0)
             {
                 childTimer -= 1 * Time.deltaTime;
             }
@@ -43,13 +45,18 @@ public class ChildScript : MonoBehaviour
             }
         }
         else
-        {    if (childWaitingTimer > 0)
+        {   
+            if (childWaitingTimer > 0)
             {
                 childWaitingTimer -= 1 * Time.deltaTime;
             }
             else
             {
                 NotWaiting(false);
+                if (playerLoosedLife)
+                {
+                    playerLoosedLife = false;
+                }   
             }
         }
     }
@@ -88,15 +95,21 @@ public class ChildScript : MonoBehaviour
                     
                     Debug.Log("You gived the good candy to the child !");
                     door.isOpen = false;
-                    player.candyCarry = "none";
-                    _ui.changeIcon("none");
                     minTime -= 1;
                     ResetWaitingVars();
                 }
                 else
                 {
                     Debug.Log("You gived the wrong candy to the child !");
+                    if (!playerLoosedLife)
+                    {
+                        madProbability -= 1;
+                        playerLoosedLife = true;
+                        Debug.Log("YOU LOOSED ONE LIFE !");
+                    }
                 }
+                player.candyCarry = "none";
+                _ui.changeIcon("none");
             }
         }
         else      
@@ -104,7 +117,13 @@ public class ChildScript : MonoBehaviour
             if (!mad)
             {
                 Debug.Log("The "+color+" child is going mad !");
-                madProbability -= 1;
+                if (!playerLoosedLife)
+                {
+                    madProbability -= 1;
+                    playerLoosedLife = true;
+                    Debug.Log("YOU LOOSED ONE LIFE !");
+                }
+                door.isOpen = false;
                 ResetWaitingVars();
             }
             else
