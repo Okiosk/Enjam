@@ -15,10 +15,32 @@ public class DoorScript : MonoBehaviour
 
     void Update()
     {
+        if (isOpen && Input.GetKeyDown(KeyCode.Space))
+        {
+            if (child.childIsWaiting)
+            {
+                    child.NotWaiting(true);
+            }
+            else
+            {
+                if (Random.Range(0, screamerProbability) == 0)
+                {
+                    //display the screamer
+                    //play the sound
+                    Debug.Log("SCREAMER !!!!");
+                }
+                else
+                {
+                    Debug.Log("There's nothing there...");
+                }
+            }
+        }
         if (playerOnDoor && Input.GetKeyDown(KeyCode.Space))
         {
             ChangeDoorState();
         }
+        
+        
         if (isOpen)
         {
             openDoor.SetActive(true);
@@ -46,30 +68,9 @@ public class DoorScript : MonoBehaviour
     }
     private void ChangeDoorState()
     {
-        bool checkOpen = isOpen;
         if (!(child.childIsWaiting && isOpen))
         {
             isOpen = !isOpen;
-        }
-        if (isOpen)
-        {
-            if (child.childIsWaiting)
-            {
-                child.NotWaiting(true);
-            }
-            else
-            {
-                if (Random.Range(0, screamerProbability) == 0)
-                {
-                    //display the screamer
-                    //play the sound
-                    Debug.Log("SCREAMER !!!!");
-                }
-                else
-                {
-                    Debug.Log("There's nothing there...");
-                }
-            }
         }
     }
 }
