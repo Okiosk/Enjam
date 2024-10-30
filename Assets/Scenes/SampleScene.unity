@@ -948,6 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18ecfacebbfda4c42ac6a8ec87729fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 296017151}
   rigidBody: {fileID: 296017149}
   speed: 1500
   candyCarry: none
@@ -3645,7 +3646,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2061159606
