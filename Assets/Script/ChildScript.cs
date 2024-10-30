@@ -85,7 +85,6 @@ public class ChildScript : MonoBehaviour
     {
         if (opened)
         {
-            DisplayBubble(color);
             if (mad)
             {    
                 Debug.Log("YOU DIED !");

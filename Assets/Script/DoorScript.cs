@@ -19,28 +19,29 @@ public class DoorScript : MonoBehaviour
         {
             if (child.childIsWaiting)
             {
-                    child.NotWaiting(true);
-            }
-            else
-            {
-                if (Random.Range(0, screamerProbability) == 0)
-                {
-                    //display the screamer
-                    //play the sound
-                    Debug.Log("SCREAMER !!!!");
-                }
-                else
-                {
-                    Debug.Log("There's nothing there...");
-                }
+                child.NotWaiting(true);
             }
         }
         if (playerOnDoor && Input.GetKeyDown(KeyCode.Space))
         {
             ChangeDoorState();
+            if (isOpen)
+            {
+                if (!child.childIsWaiting)
+                {
+                    if (Random.Range(0, screamerProbability) == 0)
+                    {
+                        //display the screamer
+                        //play the sound
+                        Debug.Log("SCREAMER !!!!");
+                    }
+                    else
+                    {
+                        Debug.Log("There's nothing there...");
+                    }
+                }
+            }
         }
-        
-        
         if (isOpen)
         {
             openDoor.SetActive(true);
@@ -71,6 +72,10 @@ public class DoorScript : MonoBehaviour
         if (!(child.childIsWaiting && isOpen))
         {
             isOpen = !isOpen;
+        }
+        if (isOpen)
+        {
+            child.DisplayBubble(child.color);
         }
     }
 }
