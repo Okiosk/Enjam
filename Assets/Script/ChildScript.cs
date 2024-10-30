@@ -85,6 +85,7 @@ public class ChildScript : MonoBehaviour
                     ResetWaitingVars();
                     Debug.Log("You gived the wrong candy to the child !");
                 }
+                player.candyCarry = "none";
             }
         }
         else      
