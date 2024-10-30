@@ -50,7 +50,7 @@ public class DoorScript : MonoBehaviour
                 }
                 else
                 {
-                    //nothing append
+                    Debug.Log("There's nothing there...");
                 }
             }
         }

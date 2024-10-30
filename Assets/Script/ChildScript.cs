@@ -20,7 +20,7 @@ public class ChildScript : MonoBehaviour
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
 
-        childWaitingTimer = Random.Range(minTime, maxTime+1);
+        childTimer = Random.Range(minTime, maxTime+1);
     }
 
     void Update()
@@ -56,27 +56,48 @@ public class ChildScript : MonoBehaviour
         if (Random.Range(0, madProbability) == 0)
         {
             mad = true;
-            Debug.Log("THE MAD CHILD IS WAITING !!!");
+            Debug.Log("THE MAD CHILD IS WAITING, DON'T OPEN THE DOOR !");
         }
         else
         {
             color = colors[Random.Range(0, colors.Length)];
-            Debug.Log("THE "+ color +" CHILD IS WAITING !!!");
+            Debug.Log("The "+ color +" child is waiting !");
         }
     }
     public void NotWaiting(bool opened)
     {
-        if (opened && mad)
+        if (opened)
         {
-            Debug.Log("YOU DIED !");
+            if (mad)
+            {    
+                Debug.Log("YOU DIED !");
+                //player.isDead = true;
+            }
+            else
+            {
+                if (player.candyCarry == color)
+                {
+                    ResetWaitingVars();
+                    Debug.Log("You gived the good candy to the child !");
+                }
+                else
+                {
+                    ResetWaitingVars();
+                    Debug.Log("You gived the wrong candy to the child !");
+                }
+            }
         }
         else      
         {
-            Debug.Log("THE "+color+" CHILD IS NO LONGER WAITING.");
+            Debug.Log("The "+color+" child id going mad !");
         }
+        ResetWaitingVars();
+    }
+    public void ResetWaitingVars()
+    {
         childIsWaiting = false;
-        childTimer = Random.Range(minTime, maxTime+1);
         mad = false;
         color = "none";
+        childTimer = Random.Range(minTime, maxTime+1);
     }
 }
