@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour
@@ -15,42 +16,46 @@ public class DoorScript : MonoBehaviour
 
     void Update()
     {
-        if (isOpen && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (child.childIsWaiting)
-            {
-                child.NotWaiting(true);
-            }
-        }
-        if (playerOnDoor && Input.GetKeyDown(KeyCode.Space))
-        {
-            ChangeDoorState();
-            if (isOpen)
+            if (playerOnDoor)
             {
                 if (!child.childIsWaiting)
                 {
-                    if (Random.Range(0, screamerProbability) == 0)
+                    ChangeDoorState();
+                    if (isOpen)
                     {
-                        //display the screamer
-                        //play the sound
-                        Debug.Log("SCREAMER !!!!");
+                        if (Random.Range(0, screamerProbability) == 0)
+                        {
+                            //display the screamer
+                            //play the sound
+                            Debug.Log("SCREAMER !!!!");
+                        }
+                        else
+                        {
+                            Debug.Log("There's nothing there...");
+                        }
+                    }
+                }
+                else
+                {
+                    if (isOpen)
+                    {
+                        if (child.mad)
+                        {
+                            child.KillPlayer();
+                        }
+                        else if (child.GiveCandy())
+                        {
+                            ChangeDoorState();
+                        }
                     }
                     else
                     {
-                        Debug.Log("There's nothing there...");
+                        ChangeDoorState();
                     }
                 }
             }
-        }
-        if (isOpen)
-        {
-            openDoor.SetActive(true);
-            _renderer.enabled = false;
-        }
-        else
-        {
-            openDoor.SetActive(false);
-            _renderer.enabled = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,15 +72,10 @@ public class DoorScript : MonoBehaviour
             playerOnDoor = false;
        }
     }
-    private void ChangeDoorState()
+    public void ChangeDoorState()
     {
-        if (!(child.childIsWaiting && isOpen))
-        {
-            isOpen = !isOpen;
-        }
-        if (isOpen)
-        {
-            child.DisplayBubble(child.color);
-        }
+        isOpen = !isOpen;
+        openDoor.SetActive(isOpen);
+        _renderer.enabled = !isOpen;
     }
 }

@@ -12,7 +12,7 @@ public class ChildScript : MonoBehaviour
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
     public string color = "none";
-    private bool mad = false;
+    public bool mad = false;
     private int madProbability = 10;
     private bool playerLoosedLife = false;
     public DoorScript door;
@@ -45,7 +45,7 @@ public class ChildScript : MonoBehaviour
             {
                 if (!door.isOpen)
                 {
-                    Waiting();
+                    ChildWaitingAtTheDoor();
                 }
             }
         }
@@ -57,7 +57,7 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
-                NotWaiting(false);
+                ChildNoLongerWaitingAtTheDoor(false);
                 
                 if (playerLoosedLife)
                 {
@@ -66,7 +66,7 @@ public class ChildScript : MonoBehaviour
             }
         }
     }
-    public void Waiting()
+    public void ChildWaitingAtTheDoor()
     {
         childIsWaiting = true;
         childWaitingTimer = waitingTime;
@@ -81,62 +81,58 @@ public class ChildScript : MonoBehaviour
             Debug.Log("A child is waiting !");
         }
     }
-    public void NotWaiting(bool opened)
+    public void ChildNoLongerWaitingAtTheDoor(bool opened)
     {
-        if (opened)
+        if (!mad)
         {
-            if (mad)
-            {    
-                Debug.Log("YOU DIED !");
-                player.isDead = true;
-            }
-            else
+            Debug.Log("The child is going mad !");
+            if (!playerLoosedLife)
             {
-                if (player.candyCarry == "none")
-                {
-                    Debug.Log("I have nothing to give.");
-                }
-                else if (player.candyCarry == color)
-                {
-                    
-                    Debug.Log("You gived the good candy to the child !");
-                    door.isOpen = false;
-                    minTime -= 1;
-                    ResetWaitingVars();
-                }
-                else
-                {
-                    Debug.Log("You gived the wrong candy to the child !");
-                    if (!playerLoosedLife)
-                    {
-                        madProbability -= 1;
-                        playerLoosedLife = true;
-                        Debug.Log("YOU LOOSED ONE LIFE !");
-                    }
-                }
-                player.candyCarry = "none";
-                _ui.changeIcon("none");
+                madProbability -= 1;
+                playerLoosedLife = true;
+                Debug.Log("YOU LOOSED ONE LIFE !");
             }
+            door.ChangeDoorState();
         }
-        else      
+        else
         {
-            if (!mad)
-            {
-                Debug.Log("The "+color+" child is going mad !");
-                if (!playerLoosedLife)
-                {
-                    madProbability -= 1;
-                    playerLoosedLife = true;
-                    Debug.Log("YOU LOOSED ONE LIFE !");
-                }
-                door.isOpen = false;
-            }
-            else
-            {
-                Debug.Log("The mad child is gone.");
-            }
+            Debug.Log("The mad child is gone.");
+        }
+        ResetWaitingVars();
+    }
+    public bool GiveCandy()
+    {
+        if (player.candyCarry == "none")
+        {
+            Debug.Log("I have nothing to give.");
+            return false;
+        }
+        else if (player.candyCarry == color)
+        {      
+            Debug.Log("You gived the good candy to the child !");
+            door.ChangeDoorState();
+            minTime -= 1;
             ResetWaitingVars();
         }
+        else
+        {
+            Debug.Log("You gived the wrong candy to the child !");
+            if (!playerLoosedLife)
+            {
+                madProbability -= 1;
+                playerLoosedLife = true;
+                Debug.Log("YOU LOOSED ONE LIFE !");
+            }
+            return false;
+        }
+        player.candyCarry = "none";
+        _ui.changeIcon("none");
+        return true;
+    }
+    public void KillPlayer()
+    {
+        Debug.Log("YOU DIED !");
+        player.isDead = true;
     }
     private void ResetWaitingVars()
     {
