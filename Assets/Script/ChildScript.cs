@@ -19,6 +19,7 @@ public class ChildScript : MonoBehaviour
     
     void Start()
     {
+        
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         _ui = GameObject.FindGameObjectWithTag("UI").GetComponent<ui_le_script>();
