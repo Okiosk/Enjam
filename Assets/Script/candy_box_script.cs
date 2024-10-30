@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,6 +12,66 @@ public class candy_box_script : MonoBehaviour
     private camera_script camera;
     private bool inQTE = false;
     private int avancementQTE = 0;
+
+    private int qte1 = 0;
+    private int qte2 = 0;
+    private int qte3 = 0;
+    private List<KeyCode> listInput = new List<KeyCode>() 
+    { KeyCode.A,
+      KeyCode.Z,
+      KeyCode.E,
+      KeyCode.R,
+      KeyCode.T,
+      KeyCode.Y,
+      KeyCode.U,
+      KeyCode.I,
+      KeyCode.O,
+      KeyCode.P,
+      KeyCode.Q,
+      KeyCode.S,
+      KeyCode.D,
+      KeyCode.F,
+      KeyCode.G,
+      KeyCode.H,
+      KeyCode.J,
+      KeyCode.K,
+      KeyCode.L,
+      KeyCode.M,
+      KeyCode.W,
+      KeyCode.X,
+      KeyCode.C,
+      KeyCode.V,
+      KeyCode.B,
+      KeyCode.N,
+    };
+    private List<string> listInputName = new List<string>()
+    { "A",
+      "Z",
+      "E",
+      "R",
+      "T",
+      "Y",
+      "U",
+      "I",
+      "O",
+      "P",
+      "Q",
+      "S",
+      "D",
+      "F",
+      "G",
+      "H",
+      "J",
+      "K",
+      "L",
+      "M",
+      "W",
+      "X",
+      "C",
+      "V",
+      "B",
+      "N",
+    };
 
     private bool playerIn = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -33,6 +94,7 @@ public class candy_box_script : MonoBehaviour
                 camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
                 inQTE = true;
                 pScript.inQTE = true;
+                createQTE();
             }
             // Poubelle
             if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry != "none" || typeCandy == "none"))
@@ -43,9 +105,29 @@ public class candy_box_script : MonoBehaviour
 
             if (inQTE ) 
             {
-                if (Input.GetKeyDown(KeyCode.A))
+                if (avancementQTE == 0)
                 {
-                    avancementQTE++;
+                    Debug.Log(listInputName[qte1]);
+                    if (Input.GetKeyDown(listInput[qte1]))
+                    {
+                        avancementQTE = 1;
+                    }
+                }
+                if (avancementQTE == 1)
+                {
+                    Debug.Log(listInputName[qte2]);
+                    if (Input.GetKeyDown(listInput[qte2]))
+                    {
+                        avancementQTE = 2;
+                    }
+                }
+                if (avancementQTE == 2)
+                {
+                    Debug.Log(listInputName[qte3]);
+                    if (Input.GetKeyDown(listInput[qte3]))
+                    {
+                        avancementQTE = 3;
+                    }
                 }
 
 
@@ -68,5 +150,12 @@ public class candy_box_script : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerIn = false;
+    }
+    
+    private void createQTE()
+    {
+        qte1 = Random.Range(0, 25);
+        qte2 = Random.Range(0, 25);
+        qte3 = Random.Range(0, 25);
     }
 }
