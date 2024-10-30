@@ -57,7 +57,7 @@ public class ChildScript : MonoBehaviour
             }
             else
             {
-                ChildNoLongerWaitingAtTheDoor(false);
+                ChildNoLongerWaitingAtTheDoor();
                 
                 if (playerLoosedLife)
                 {
@@ -78,10 +78,10 @@ public class ChildScript : MonoBehaviour
         else
         {
             color = colors[Random.Range(0, colors.Length)];
-            Debug.Log("A child is waiting !");
+            Debug.Log("A "+color+" child is waiting !");
         }
     }
-    public void ChildNoLongerWaitingAtTheDoor(bool opened)
+    public void ChildNoLongerWaitingAtTheDoor()
     {
         if (!mad)
         {
@@ -139,7 +139,6 @@ public class ChildScript : MonoBehaviour
         childIsWaiting = false;
         mad = false;
         color = "none";
-        DisplayBubble(color);
         childTimer = Random.Range(minTime, maxTime+1);
     }
     public void DisplayBubble(string color)

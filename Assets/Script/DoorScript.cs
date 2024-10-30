@@ -45,14 +45,19 @@ public class DoorScript : MonoBehaviour
                         {
                             child.KillPlayer();
                         }
-                        else if (child.GiveCandy())
+                        else
                         {
-                            ChangeDoorState();
+                            
+                            if (child.GiveCandy())
+                            {
+                                ChangeDoorState();
+                            }
                         }
                     }
                     else
                     {
                         ChangeDoorState();
+                        child.DisplayBubble(child.color);
                     }
                 }
             }
