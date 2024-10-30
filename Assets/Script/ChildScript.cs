@@ -11,7 +11,7 @@ public class ChildScript : MonoBehaviour
     private float childWaitingTimer;
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
-    private string color = "";
+    public string color = "none";
     private bool mad = false;
     private int madProbability = 10;
     private bool playerLoosedLife = false;
