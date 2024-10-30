@@ -58,6 +58,10 @@ public class ChildScript : MonoBehaviour
             else
             {
                 NotWaiting(false);
+                sucetteCandy.SetActive(false);
+                DonutCandy.SetActive(false);
+                CanneCandy.SetActive(false);
+                greenCandy.SetActive(false);
                 if (playerLoosedLife)
                 {
                     playerLoosedLife = false;
