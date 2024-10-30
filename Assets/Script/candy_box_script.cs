@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,6 +8,8 @@ public class candy_box_script : MonoBehaviour
 {
 
     public string typeCandy;
+    public TextMeshProUGUI uiGO;
+
     private ui_le_script uiScript;
     private PlayerScript pScript;
     private camera_script camera;
@@ -91,10 +94,11 @@ public class candy_box_script : MonoBehaviour
             // Boite de bonbon
             if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy != "none"))
             {
+                pScript.inQTE = true;
                 camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
                 inQTE = true;
-                pScript.inQTE = true;
                 createQTE();
+                uiGO.text = listInputName[qte1] + listInputName[qte2] + listInputName[qte3];
             }
             // Poubelle
             if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry != "none" || typeCandy == "none"))
@@ -105,12 +109,14 @@ public class candy_box_script : MonoBehaviour
 
             if (inQTE ) 
             {
+                
                 if (avancementQTE == 0)
                 {
                     Debug.Log(listInputName[qte1]);
                     if (Input.GetKeyDown(listInput[qte1]))
                     {
                         avancementQTE = 1;
+                        uiGO.text = " " + listInputName[qte2] + listInputName[qte3];
                     }
                 }
                 if (avancementQTE == 1)
@@ -119,6 +125,7 @@ public class candy_box_script : MonoBehaviour
                     if (Input.GetKeyDown(listInput[qte2]))
                     {
                         avancementQTE = 2;
+                        uiGO.text = "  " + listInputName[qte3];
                     }
                 }
                 if (avancementQTE == 2)
@@ -127,6 +134,7 @@ public class candy_box_script : MonoBehaviour
                     if (Input.GetKeyDown(listInput[qte3]))
                     {
                         avancementQTE = 3;
+                        uiGO.text = "";
                     }
                 }
 
