@@ -24,7 +24,7 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 velocity[0] += speed;
-            }
+            }   
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 velocity[0] -= speed;
