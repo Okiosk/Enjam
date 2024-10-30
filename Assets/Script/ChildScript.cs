@@ -58,10 +58,7 @@ public class ChildScript : MonoBehaviour
             else
             {
                 NotWaiting(false);
-                sucetteCandy.SetActive(false);
-                DonutCandy.SetActive(false);
-                CanneCandy.SetActive(false);
-                greenCandy.SetActive(false);
+                
                 if (playerLoosedLife)
                 {
                     playerLoosedLife = false;
@@ -134,13 +131,12 @@ public class ChildScript : MonoBehaviour
                     Debug.Log("YOU LOOSED ONE LIFE !");
                 }
                 door.isOpen = false;
-                ResetWaitingVars();
             }
             else
             {
                 Debug.Log("The mad child is gone.");
-                ResetWaitingVars();
             }
+            ResetWaitingVars();
         }
     }
     private void ResetWaitingVars()
@@ -148,6 +144,7 @@ public class ChildScript : MonoBehaviour
         childIsWaiting = false;
         mad = false;
         color = "none";
+        DisplayBubble(color);
         childTimer = Random.Range(minTime, maxTime+1);
     }
     public void DisplayBubble(string color)
@@ -165,6 +162,12 @@ public class ChildScript : MonoBehaviour
                 break;
             case "green":
                 greenCandy.SetActive(true);
+                break;
+            case "none":
+                sucetteCandy.SetActive(false);
+                DonutCandy.SetActive(false);
+                CanneCandy.SetActive(false);
+                greenCandy.SetActive(false);
                 break;
         }
     }
