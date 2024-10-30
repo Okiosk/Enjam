@@ -6,7 +6,7 @@ public class ChildScript : MonoBehaviour
     private int minTime = 10, maxTime = 15;
     private float childTimer = 0;
     private int waitingTime = 5;
-    private float childWaitingTimer = 0;
+    private float childWaitingTimer;
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
     public string color = "";
@@ -19,6 +19,8 @@ public class ChildScript : MonoBehaviour
     {
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+
+        childWaitingTimer = Random.Range(minTime, maxTime+1);
     }
 
     void Update()
@@ -73,7 +75,7 @@ public class ChildScript : MonoBehaviour
             Debug.Log("THE "+color+" CHILD IS NO LONGER WAITING.");
         }
         childIsWaiting = false;
-        childTimer = Random.Range(minTime, maxTime);
+        childTimer = Random.Range(minTime, maxTime+1);
         mad = false;
         color = "none";
     }
