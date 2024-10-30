@@ -34,7 +34,10 @@ public class DoorScript : MonoBehaviour
     }
     private void ChangeDoorState()
     {
-        isOpen = !isOpen;
+        if (!(child.childIsWaiting && isOpen))
+        {
+            isOpen = !isOpen;
+        }
         if (isOpen)
         {
             if (child.childIsWaiting)
