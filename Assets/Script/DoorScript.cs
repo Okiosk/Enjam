@@ -47,6 +47,7 @@ public class DoorScript : MonoBehaviour
                 {
                     //display the screamer
                     //play the sound
+                    Debug.Log("SCREAMER !!!!");
                 }
                 else
                 {
