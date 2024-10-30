@@ -140,6 +140,7 @@ public class candy_box_script : MonoBehaviour
                 camera.unzoom();
                 inQTE = false;
                 pScript.inQTE = false;
+                avancementQTE = 0;
             }
 
         }
