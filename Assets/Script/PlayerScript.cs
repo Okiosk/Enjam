@@ -18,14 +18,11 @@ public class PlayerScript : MonoBehaviour
     public bool inQTE = false;
     void Start()
     {
-        
+
     }
     void Update()
     {
-        if (lives <= 0)
-        {
-            isDead = true;
-        }
+        displayHearts(lives);
 
         if (!inQTE)
         {
@@ -53,6 +50,45 @@ public class PlayerScript : MonoBehaviour
         else 
         {
             rigidBody.linearVelocity = new Vector2(0, 0);
+        }
+    }
+    void displayHearts(int value)
+    {
+        heart1.SetActive(false);
+        heart2.SetActive(false);
+        heart3.SetActive(false);
+        heart4.SetActive(false);
+        heart5.SetActive(false);
+        switch (value)
+        {
+            case 0:
+                isDead = true;
+                break;
+            case 1:
+                heart1.SetActive(true);
+                break;
+            case 2:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                break;
+            case 3:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                heart3.SetActive(true);
+                break;
+            case 4:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                heart3.SetActive(true);
+                heart4.SetActive(true);
+                break;
+            case 5:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                heart3.SetActive(true);
+                heart4.SetActive(true);
+                heart5.SetActive(true);
+                break;
         }
     }
 }

@@ -952,11 +952,11 @@ MonoBehaviour:
   speed: 1500
   candyCarry: none
   lives: 5
-  heart1: 0
-  heart2: 0
-  heart3: 0
-  heart4: 0
-  heart5: 0
+  heart1: {fileID: 617219862}
+  heart2: {fileID: 140105157}
+  heart3: {fileID: 1602840207}
+  heart4: {fileID: 1038622759}
+  heart5: {fileID: 2061159604}
   isDead: 0
   inQTE: 0
 --- !u!212 &296017147
