@@ -122,6 +122,8 @@ public class ChildScript : MonoBehaviour
                 player.lives -= 1;
                 playerLoosedLife = true;
             }
+            player.candyCarry = "none";
+            _ui.changeIcon("none");
             return false;
         }
         player.candyCarry = "none";
