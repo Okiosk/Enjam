@@ -6,12 +6,15 @@ public class DoorScript : MonoBehaviour
     private bool playerOnDoor = false;
     public bool isOpen = false;
     private int screamerProbability = 10;
+    private int maxDoorTimer = 3;
+    private float doorTimer;
     public ChildScript child;
     public GameObject openDoor;
     public SpriteRenderer _renderer;
     void Start()
     {
         child = GameObject.FindGameObjectWithTag("Child").GetComponent<ChildScript>();
+        doorTimer = maxDoorTimer;
     }
 
     void Update()
@@ -58,6 +61,20 @@ public class DoorScript : MonoBehaviour
                 }
             }
         }
+        if (isOpen && !child.childIsWaiting)
+        {    
+            if (doorTimer > 0)
+            {
+                doorTimer -= 1 * Time.deltaTime;
+            }
+            else
+            {
+                doorTimer = maxDoorTimer;
+                ChangeDoorState();
+            }
+        }
+        
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
