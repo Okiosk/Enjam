@@ -27,10 +27,18 @@ public class candy_box_script : MonoBehaviour
     {
         if (playerIn) 
         {
-            if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy == "none"))
+            // Boite de bonbon
+            if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy != "none"))
             {
                 camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
                 inQTE = true;
+                pScript.inQTE = true;
+            }
+            // Poubelle
+            if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry != "none" || typeCandy == "none"))
+            {
+                pScript.candyCarry = typeCandy;
+                uiScript.changeIcon(typeCandy);
             }
 
             if (inQTE ) 
@@ -38,7 +46,6 @@ public class candy_box_script : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.A))
                 {
                     avancementQTE++;
-                    Debug.Log("avance");
                 }
 
 
@@ -48,6 +55,7 @@ public class candy_box_script : MonoBehaviour
                     uiScript.changeIcon(typeCandy);
                     camera.unzoom();
                     inQTE = false;
+                    pScript.inQTE = false;
                 }
 
             }
