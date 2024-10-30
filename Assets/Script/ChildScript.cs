@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class ChildScript : MonoBehaviour
 {
-    private int minTime = 10, maxTime = 15;
+    private int minTime = 10, maxTime = 10;
     private float childTimer = 0;
-    private int waitingTime = 5;
+    private int waitingTime = 8;
     private float childWaitingTimer;
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
@@ -73,7 +73,7 @@ public class ChildScript : MonoBehaviour
             if (mad)
             {    
                 Debug.Log("YOU DIED !");
-                //player.isDead = true;
+                player.isDead = true;
             }
             else
             {
@@ -90,7 +90,7 @@ public class ChildScript : MonoBehaviour
                 door.isOpen = false;
                 player.candyCarry = "none";
                 _ui.changeIcon("none");
-                
+                minTime -= 1;
             }
         }
         else      
@@ -98,6 +98,7 @@ public class ChildScript : MonoBehaviour
             if (!mad)
             {
                 Debug.Log("The "+color+" child is going mad !");
+                madProbability -= 1;
             }
             else
             {
