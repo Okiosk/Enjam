@@ -10,13 +10,13 @@ public class camera_script : MonoBehaviour
     private float zoomMultiplier = 0.008f;
     private float minZoom = 2f;
     private float maxZoom = 8f;
-    private float velocity = 0f;
+    private float velocity = 1f;
     private float smoothTime = 0.01f;
 
     private bool zoomEnCour = false;
     private bool dezoomEnCour = false;
     private UnityEngine.Vector3 target;
-    private int speed = 3;
+    private int speed = 8;
 
     [SerializeField] private Camera cam;
 
@@ -34,16 +34,15 @@ public class camera_script : MonoBehaviour
             zoom = Mathf.Clamp(zoom, minZoom, maxZoom);
             cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, zoom, ref velocity, smoothTime * Time.deltaTime);
             gameObject.transform.position = UnityEngine.Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-            if (cam.orthographicSize > maxZoom)
+            if (cam.orthographicSize <= 2)
             {
                 zoomEnCour = false;
             }
         }
         if (dezoomEnCour)
         {
-            Debug.Log("hey");
-            float scroll = -1;
-            zoom -= scroll * zoomMultiplier;
+            float scroll = 1;
+            zoom += scroll * zoomMultiplier;
             zoom = Mathf.Clamp(zoom, minZoom, maxZoom);
             cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, zoom, ref velocity, smoothTime * Time.deltaTime);
             gameObject.transform.position = UnityEngine.Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);

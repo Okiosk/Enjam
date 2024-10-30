@@ -9,6 +9,8 @@ public class candy_box_script : MonoBehaviour
     private ui_le_script uiScript;
     private PlayerScript pScript;
     private camera_script camera;
+    private bool inQTE = false;
+    private int avancementQTE = 0;
 
     private bool playerIn = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,9 +29,27 @@ public class candy_box_script : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy == "none"))
             {
-                //camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
-                pScript.candyCarry = typeCandy;
-                uiScript.changeIcon(typeCandy);
+                camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
+                inQTE = true;
+            }
+
+            if (inQTE ) 
+            {
+                if (Input.GetKeyDown(KeyCode.A))
+                {
+                    avancementQTE++;
+                    Debug.Log("avance");
+                }
+
+
+                if (avancementQTE == 3) 
+                {
+                    pScript.candyCarry = typeCandy;
+                    uiScript.changeIcon(typeCandy);
+                    camera.unzoom();
+                    inQTE = false;
+                }
+
             }
         }
     }
