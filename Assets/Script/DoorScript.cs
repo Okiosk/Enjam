@@ -6,6 +6,8 @@ public class DoorScript : MonoBehaviour
     public bool isOpen = false;
     private int screamerProbability = 10;
     public ChildScript child;
+    public GameObject openDoor;
+    public SpriteRenderer _renderer;
     void Start()
     {
         child = GameObject.FindGameObjectWithTag("Child").GetComponent<ChildScript>();
@@ -16,6 +18,16 @@ public class DoorScript : MonoBehaviour
         if (playerOnDoor && Input.GetKeyDown(KeyCode.Space))
         {
             ChangeDoorState();
+        }
+        if (isOpen)
+        {
+            openDoor.SetActive(true);
+            _renderer.enabled = false;
+        }
+        else
+        {
+            openDoor.SetActive(false);
+            _renderer.enabled = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
