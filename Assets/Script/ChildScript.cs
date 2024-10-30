@@ -89,7 +89,14 @@ public class ChildScript : MonoBehaviour
         }
         else      
         {
-            Debug.Log("The "+color+" child id going mad !");
+            if (!mad)
+            {
+                Debug.Log("The "+color+" child is going mad !");
+            }
+            else
+            {
+                Debug.Log("The mad child is gone.");
+            }
         }
         ResetWaitingVars();
     }
