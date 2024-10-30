@@ -1685,7 +1685,7 @@ PrefabInstance:
     - target: {fileID: 877439661657388127, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7858980336673299937, guid: 1e8e141c595be744cabb31deae88f57a, type: 3}
+      objectReference: {fileID: -8574218762413346058, guid: 3ddf1bbf906f30a4b94da89b19a56259, type: 3}
     - target: {fileID: 877439661657388127, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -1693,6 +1693,10 @@ PrefabInstance:
     - target: {fileID: 877439661657388127, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1570902627605622813, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
+      propertyPath: m_Radius
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3127511648831017025, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
       propertyPath: m_Name
@@ -1710,6 +1714,14 @@ PrefabInstance:
       propertyPath: iconeCandy
       value: 
       objectReference: {fileID: 4941240919024178222, guid: ba28fd749193b274884c6824e0cbc7a5, type: 3}
+    - target: {fileID: 6529320485182622691, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6529320485182622691, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6529320485182622691, guid: 90a2e9a6d40e12341aa228aff81db9d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.46
