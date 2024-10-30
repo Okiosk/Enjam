@@ -89,7 +89,7 @@ public class candy_box_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerIn) 
+        if (playerIn && !inQTE) 
         {
             // Boite de bonbon
             if (Input.GetKeyDown(KeyCode.Space) && pScript.candyCarry == "none" && typeCandy != "none")
@@ -106,46 +106,42 @@ public class candy_box_script : MonoBehaviour
                 pScript.candyCarry = typeCandy;
                 uiScript.changeIcon(typeCandy);
             }
-
-            if (inQTE ) 
+        }
+        if (inQTE)
+        {
+            if (avancementQTE == 0)
             {
-                
-                if (avancementQTE == 0)
+                if (Input.GetKeyDown(listInput[qte1]))
                 {
-                    if (Input.GetKeyDown(listInput[qte1]))
-                    {
-                        avancementQTE = 1;
-                        uiGO.text = "  " + listInputName[qte2] + listInputName[qte3];
-                    }
+                    avancementQTE = 1;
+                    uiGO.text = "  " + listInputName[qte2] + listInputName[qte3];
                 }
-                if (avancementQTE == 1)
-                {
-                    if (Input.GetKeyDown(listInput[qte2]))
-                    {
-                        avancementQTE = 2;
-                        uiGO.text = "    " + listInputName[qte3];
-                    }
-                }
-                if (avancementQTE == 2)
-                {
-                    if (Input.GetKeyDown(listInput[qte3]))
-                    {
-                        avancementQTE = 3;
-                        uiGO.text = "";
-                    }
-                }
-
-
-                if (avancementQTE == 3) 
-                {
-                    pScript.candyCarry = typeCandy;
-                    uiScript.changeIcon(typeCandy);
-                    camera.unzoom();
-                    inQTE = false;
-                    pScript.inQTE = false;
-                }
-
             }
+            if (avancementQTE == 1)
+            {
+                if (Input.GetKeyDown(listInput[qte2]))
+                {
+                    avancementQTE = 2;
+                    uiGO.text = "    " + listInputName[qte3];
+                }
+            }
+            if (avancementQTE == 2)
+            {
+                if (Input.GetKeyDown(listInput[qte3]))
+                {
+                    avancementQTE = 3;
+                    uiGO.text = "";
+                }
+            }
+            if (avancementQTE == 3)
+            {
+                pScript.candyCarry = typeCandy;
+                uiScript.changeIcon(typeCandy);
+                camera.unzoom();
+                inQTE = false;
+                pScript.inQTE = false;
+            }
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
