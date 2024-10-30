@@ -19,6 +19,16 @@ public class DoorScript : MonoBehaviour
         {
             ChangeDoorState();
         }
+        if (isOpen)
+        {
+            openDoor.SetActive(true);
+            _renderer.enabled = false;
+        }
+        else
+        {
+            openDoor.SetActive(false);
+            _renderer.enabled = true;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -42,8 +52,6 @@ public class DoorScript : MonoBehaviour
         }
         if (isOpen)
         {
-            openDoor.SetActive(true);
-            _renderer.enabled = false;
             if (child.childIsWaiting)
             {
                 child.NotWaiting(true);
@@ -61,11 +69,6 @@ public class DoorScript : MonoBehaviour
                     Debug.Log("There's nothing there...");
                 }
             }
-        }
-        else
-        {
-            openDoor.SetActive(false);
-            _renderer.enabled = true;
         }
     }
 }

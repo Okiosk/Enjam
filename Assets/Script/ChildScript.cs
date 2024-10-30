@@ -81,28 +81,14 @@ public class ChildScript : MonoBehaviour
         else
         {
             color = colors[Random.Range(0, colors.Length)];
-            switch (color)
-            {
-                case "orange":
-                    sucetteCandy.SetActive(true);
-                    break;
-                case "pink":
-                    DonutCandy.SetActive(true);
-                    break;
-                case "blue":
-                    CanneCandy.SetActive(true);
-                    break;
-                case "green":
-                    greenCandy.SetActive(true);
-                    break;
-            }
-            Debug.Log("The "+ color +" child is waiting !");
+            Debug.Log("A child is waiting !");
         }
     }
     public void NotWaiting(bool opened)
     {
         if (opened)
         {
+            DisplayBubble(color);
             if (mad)
             {    
                 Debug.Log("YOU DIED !");
@@ -163,5 +149,23 @@ public class ChildScript : MonoBehaviour
         mad = false;
         color = "none";
         childTimer = Random.Range(minTime, maxTime+1);
+    }
+    public void DisplayBubble(string color)
+    {
+        switch (color)
+        {
+            case "orange":
+                sucetteCandy.SetActive(true);
+                break;
+            case "pink":
+                DonutCandy.SetActive(true);
+                break;
+            case "blue":
+                CanneCandy.SetActive(true);
+                break;
+            case "green":
+                greenCandy.SetActive(true);
+                break;
+        }
     }
 }
