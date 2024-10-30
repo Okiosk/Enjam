@@ -6,6 +6,8 @@ public class DoorScript : MonoBehaviour
     public bool isOpen = false;
     private int screamerProbability = 10;
     public ChildScript child;
+    public GameObject openDoor;
+    public SpriteRenderer _renderer;
     void Start()
     {
         child = GameObject.FindGameObjectWithTag("Child").GetComponent<ChildScript>();
@@ -40,6 +42,8 @@ public class DoorScript : MonoBehaviour
         }
         if (isOpen)
         {
+            openDoor.SetActive(true);
+            _renderer.enabled = false;
             if (child.childIsWaiting)
             {
                 child.NotWaiting(true);
@@ -57,6 +61,11 @@ public class DoorScript : MonoBehaviour
                     Debug.Log("There's nothing there...");
                 }
             }
+        }
+        else
+        {
+            openDoor.SetActive(false);
+            _renderer.enabled = true;
         }
     }
 }
