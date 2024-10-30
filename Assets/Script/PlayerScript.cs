@@ -20,17 +20,11 @@ public class PlayerScript : MonoBehaviour
     public bool inQTE = false;
     void Start()
     {
-        
+
     }
     void Update()
     {
-        animator.SetBool("moving", false);
-        animator.SetFloat("x", velocity[0]);
-        animator.SetFloat("y", velocity[1]);
-        if (lives <= 0)
-        {
-            isDead = true;
-        }
+        displayHearts(lives);
 
         if (!inQTE)
         {
@@ -40,36 +34,64 @@ public class PlayerScript : MonoBehaviour
             if (Input.GetKey(KeyCode.RightArrow))
             {
                 velocity[0] += speed;
-                animator.SetBool("moving", true);
-                animator.SetFloat("lastDirX", velocity[0]);
-                animator.SetFloat("lastDirY", velocity[1]);
             }   
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 velocity[0] -= speed;
-                animator.SetBool("moving", true);
-                animator.SetFloat("lastDirX", velocity[0]);
-                animator.SetFloat("lastDirY", velocity[1]);
             }
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 velocity[1] += speed;
-                animator.SetBool("moving", true);
-                animator.SetFloat("lastDirX", velocity[0]);
-                animator.SetFloat("lastDirY", velocity[1]);
+                animator.SetBool("anim_walk_face", true);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
                 velocity[1] -= speed;
-                animator.SetBool("moving", true);
-                animator.SetFloat("lastDirX", velocity[0]);
-                animator.SetFloat("lastDirY", velocity[1]);
             }
             rigidBody.linearVelocity = new Vector2(velocity[0], velocity[1]) * Time.deltaTime;
         }
         else 
         {
             rigidBody.linearVelocity = new Vector2(0, 0);
+        }
+    }
+    void displayHearts(int value)
+    {
+        heart1.SetActive(false);
+        heart2.SetActive(false);
+        heart3.SetActive(false);
+        heart4.SetActive(false);
+        heart5.SetActive(false);
+        switch (value)
+        {
+            case 0:
+                isDead = true;
+                break;
+            case 1:
+                heart1.SetActive(true);
+                break;
+            case 2:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                break;
+            case 3:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                heart3.SetActive(true);
+                break;
+            case 4:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                heart3.SetActive(true);
+                heart4.SetActive(true);
+                break;
+            case 5:
+                heart1.SetActive(true);
+                heart2.SetActive(true);
+                heart3.SetActive(true);
+                heart4.SetActive(true);
+                heart5.SetActive(true);
+                break;
         }
     }
 }
