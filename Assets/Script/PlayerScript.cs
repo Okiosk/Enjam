@@ -12,12 +12,13 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (lives <= 0)
+        {
+            isDead = true;
+        }
+
         if (!inQTE)
         {
-            if (lives <= 0)
-            {
-                isDead = true;
-            }
             velocity[0] = 0;
             velocity[1] = 0;
 
