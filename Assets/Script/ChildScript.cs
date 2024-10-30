@@ -14,11 +14,13 @@ public class ChildScript : MonoBehaviour
     private int madProbability = 10;
     public DoorScript door;
     public PlayerScript player;
+    public ui_le_script _ui;
     
     void Start()
     {
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        _ui = GameObject.FindGameObjectWithTag("UI").GetComponent<ui_le_script>();
 
         childTimer = Random.Range(minTime, maxTime+1);
     }
@@ -85,7 +87,10 @@ public class ChildScript : MonoBehaviour
                     ResetWaitingVars();
                     Debug.Log("You gived the wrong candy to the child !");
                 }
+                door.isOpen = false;
                 player.candyCarry = "none";
+                _ui.changeIcon("none");
+                
             }
         }
         else      
