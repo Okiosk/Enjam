@@ -92,7 +92,7 @@ public class candy_box_script : MonoBehaviour
         if (playerIn) 
         {
             // Boite de bonbon
-            if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry == "none" || typeCandy != "none"))
+            if (Input.GetKeyDown(KeyCode.Space) && pScript.candyCarry == "none" && typeCandy != "none")
             {
                 pScript.inQTE = true;
                 camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
@@ -101,7 +101,7 @@ public class candy_box_script : MonoBehaviour
                 uiGO.text = listInputName[qte1] + listInputName[qte2] + listInputName[qte3];
             }
             // Poubelle
-            if (Input.GetKeyDown(KeyCode.Space) && (pScript.candyCarry != "none" || typeCandy == "none"))
+            if (Input.GetKeyDown(KeyCode.Space) && pScript.candyCarry != "none" && typeCandy == "none")
             {
                 pScript.candyCarry = typeCandy;
                 uiScript.changeIcon(typeCandy);
@@ -112,25 +112,22 @@ public class candy_box_script : MonoBehaviour
                 
                 if (avancementQTE == 0)
                 {
-                    Debug.Log(listInputName[qte1]);
                     if (Input.GetKeyDown(listInput[qte1]))
                     {
                         avancementQTE = 1;
-                        uiGO.text = " " + listInputName[qte2] + listInputName[qte3];
+                        uiGO.text = "  " + listInputName[qte2] + listInputName[qte3];
                     }
                 }
                 if (avancementQTE == 1)
                 {
-                    Debug.Log(listInputName[qte2]);
                     if (Input.GetKeyDown(listInput[qte2]))
                     {
                         avancementQTE = 2;
-                        uiGO.text = "  " + listInputName[qte3];
+                        uiGO.text = "    " + listInputName[qte3];
                     }
                 }
                 if (avancementQTE == 2)
                 {
-                    Debug.Log(listInputName[qte3]);
                     if (Input.GetKeyDown(listInput[qte3]))
                     {
                         avancementQTE = 3;
