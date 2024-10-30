@@ -39,25 +39,21 @@ public class DoorScript : MonoBehaviour
                 }
                 else
                 {
-                    if (isOpen)
+                    if (isOpen) // action when the door is open
                     {
+                        if (child.GiveCandy())
+                        {
+                            ChangeDoorState();
+                        }
+                    }
+                    else // action when you open the door
+                    {
+                        ChangeDoorState();
+                        child.DisplayBubble(child.color);
                         if (child.mad)
                         {
                             child.KillPlayer();
                         }
-                        else
-                        {
-                            
-                            if (child.GiveCandy())
-                            {
-                                ChangeDoorState();
-                            }
-                        }
-                    }
-                    else
-                    {
-                        ChangeDoorState();
-                        child.DisplayBubble(child.color);
                     }
                 }
             }

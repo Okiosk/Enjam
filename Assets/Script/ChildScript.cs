@@ -92,7 +92,10 @@ public class ChildScript : MonoBehaviour
                 playerLoosedLife = true;
                 Debug.Log("YOU LOOSED ONE LIFE !");
             }
-            door.ChangeDoorState();
+            if (door.isOpen)
+            {
+                door.ChangeDoorState();
+            }
         }
         else
         {
@@ -109,8 +112,7 @@ public class ChildScript : MonoBehaviour
         }
         else if (player.candyCarry == color)
         {      
-            Debug.Log("You gived the good candy to the child !");
-            door.ChangeDoorState();
+            Debug.Log("You gived the good candy to the child !");   
             minTime -= 1;
             ResetWaitingVars();
         }
@@ -139,6 +141,7 @@ public class ChildScript : MonoBehaviour
         childIsWaiting = false;
         mad = false;
         color = "none";
+        DisplayBubble("none");
         childTimer = Random.Range(minTime, maxTime+1);
     }
     public void DisplayBubble(string color)
