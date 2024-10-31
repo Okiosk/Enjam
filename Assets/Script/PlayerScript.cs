@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     private float[] velocity = {0,0};
     public string candyCarry = "none";
     public int lives = 5;
+    public float winTimer = 5;
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
@@ -24,6 +25,14 @@ public class PlayerScript : MonoBehaviour
     }
     void Update()
     {
+        if (winTimer > 0)
+        {
+            winTimer -= 1 * Time.deltaTime / 60; 
+        }
+        else
+        {
+            //win
+        }
         animator.SetBool("moving", false);
         animator.SetFloat("x", velocity[0]);
         animator.SetFloat("y", velocity[1]);
