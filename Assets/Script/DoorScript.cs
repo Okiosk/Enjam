@@ -34,24 +34,34 @@ public class DoorScript : MonoBehaviour
             Screamer.SetActive(false);
         }*/
 
+
+
         if (child.childIsWaiting)
         {
-            if (child.mad)
+            if (child.childTimer > 9)
             {
-                animator.SetBool("knock_angry", true);
+                if (child.mad)
+                {
+                    animator.SetBool("knock_angry", true);
+                }
+                else
+                {
+                    animator.SetBool("knock_normal", true);
+                }
             }
             else
             {
-                animator.SetBool("knock_normal", true);
+                animator.SetBool("knock_normal", false);
+                animator.SetBool("knock_angry", false);
             }
+
         }
-        if (isOpen)
+
+        
+
+        if (isOpen || !child.childIsWaiting)
         {
             animator.SetBool("knock_normal", false);
-            animator.SetBool("knock_angry", false);
-        }
-        if (!child.mad)
-        {
             animator.SetBool("knock_angry", false);
         }
 
