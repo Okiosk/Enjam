@@ -1,4 +1,5 @@
-using UnityEditor.SearchService;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class PlayerScript : MonoBehaviour
 
     public Animator animator;
     public Rigidbody2D rigidBody;
+    public TextMeshProUGUI timergen;
     public float speed;
     private float[] velocity = {0,0};
     public string candyCarry = "none";
@@ -25,6 +27,8 @@ public class PlayerScript : MonoBehaviour
     }
     void Update()
     {
+        timergen.text = (winTimer*60).ToString();
+
         if (winTimer > 0)
         {
             winTimer -= 1 * Time.deltaTime / 60; 
