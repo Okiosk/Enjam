@@ -38,7 +38,7 @@ public class DoorScript : MonoBehaviour
 
         if (child.childIsWaiting)
         {
-            if (child.childTimer > 9)
+            if (child.childWaitingTimer > 11)
             {
                 if (child.mad)
                 {
