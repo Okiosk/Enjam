@@ -74,13 +74,11 @@ public class ChildScript : MonoBehaviour
         {
             NOCNOCSound.Play();
             mad = true;
-            Debug.Log("THE MAD CHILD IS WAITING, DON'T OPEN THE DOOR !");
         }
         else
         {
             NocNocSound.Play();
             color = colors[Random.Range(0, colors.Length)];
-            Debug.Log("A "+color+" child is waiting !");
         }
     }
     public void ChildNoLongerWaitingAtTheDoor()
@@ -100,7 +98,7 @@ public class ChildScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("The mad child is gone.");
+            //the mad child is gone
         }
         ResetWaitingVars();
     }
@@ -134,7 +132,6 @@ public class ChildScript : MonoBehaviour
     }
     public void KillPlayer()
     {
-        Debug.Log("YOU DIED !");
         player.isDead = true;
     }
     private void ResetWaitingVars()

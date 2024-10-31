@@ -34,11 +34,11 @@ public class DoorScript : MonoBehaviour
                         {
                             //display the screamer
                             //play the sound
-                            Debug.Log("SCREAMER !!!!");
+                            
                         }
                         else
                         {
-                            Debug.Log("There's nothing there...");
+                            //there is nothing here
                         }
                     }
                 }
