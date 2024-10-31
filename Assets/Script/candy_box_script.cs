@@ -10,6 +10,9 @@ public class candy_box_script : MonoBehaviour
     public string typeCandy;
     public TextMeshProUGUI uiGO;
     public Animator animator;
+    public GameObject keyRight;
+    public GameObject keyCenter;
+    public GameObject keyLeft;
 
     private ui_le_script uiScript;
     private PlayerScript pScript;
@@ -112,7 +115,8 @@ public class candy_box_script : MonoBehaviour
                 camera.doZoom(gameObject.transform.position.x, gameObject.transform.position.y);
                 inQTE = true;
                 createQTE();
-                uiGO.text = listInputName[qte1] + listInputName[qte2] + listInputName[qte3];
+                uiGO.text = listInputName[qte1] + "  " + listInputName[qte2] + "  " + listInputName[qte3];
+                keyLeft.SetActive(true); keyCenter.SetActive(true); keyRight.SetActive(true);
             }
             // Poubelle
             if (Input.GetKeyDown(KeyCode.Space) && pScript.candyCarry != "none" && typeCandy == "none")
@@ -128,7 +132,8 @@ public class candy_box_script : MonoBehaviour
                 if (Input.GetKeyDown(listInput[qte1]))
                 {
                     avancementQTE = 1;
-                    uiGO.text = "  " + listInputName[qte2] + listInputName[qte3];
+                    uiGO.text = "    " + listInputName[qte2] + "  " +listInputName[qte3];
+                    keyLeft.SetActive(false);
                 }
             }
             if (avancementQTE == 1)
@@ -136,7 +141,8 @@ public class candy_box_script : MonoBehaviour
                 if (Input.GetKeyDown(listInput[qte2]))
                 {
                     avancementQTE = 2;
-                    uiGO.text = "    " + listInputName[qte3];
+                    uiGO.text = "      " + "  " + listInputName[qte3];
+                    keyCenter.SetActive(false);
                 }
             }
             if (avancementQTE == 2)
@@ -145,6 +151,7 @@ public class candy_box_script : MonoBehaviour
                 {
                     avancementQTE = 3;
                     uiGO.text = "";
+                    keyRight.SetActive(false);
                 }
             }
             if (avancementQTE == 3)
