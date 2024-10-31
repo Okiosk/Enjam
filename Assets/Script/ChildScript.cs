@@ -7,7 +7,7 @@ public class ChildScript : MonoBehaviour
 {
     private int minTime = 10, maxTime = 10;
     private float childTimer = 0;
-    private int waitingTime = 8;
+    private int waitingTime = 10;
     private float childWaitingTimer;
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
