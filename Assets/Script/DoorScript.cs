@@ -6,6 +6,7 @@ public class DoorScript : MonoBehaviour
     private bool playerOnDoor = false;
     public bool isOpen = false;
     private int screamerProbability = 10;
+    private int screamerTimer;
     private int maxDoorTimer = 3;
     private float doorTimer;
     public AudioSource OpenDoorSound;
@@ -22,6 +23,10 @@ public class DoorScript : MonoBehaviour
 
     void Update()
     {
+        if (Screamer.activeSelf)
+        {
+
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (playerOnDoor)
@@ -36,6 +41,7 @@ public class DoorScript : MonoBehaviour
                             //display the screamer
                             //play the sound
                             Screamer.SetActive(true);
+                            screamerTimer = 2;
                         }
                         else
                         {
