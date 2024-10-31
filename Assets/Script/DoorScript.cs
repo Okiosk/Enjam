@@ -10,6 +10,7 @@ public class DoorScript : MonoBehaviour
     private float doorTimer;
     public AudioSource OpenDoorSound;
     public AudioSource CloseDoorSound;
+    public GameObject Screamer;
     public ChildScript child;
     public GameObject openDoor;
     public SpriteRenderer _renderer;
@@ -34,7 +35,7 @@ public class DoorScript : MonoBehaviour
                         {
                             //display the screamer
                             //play the sound
-                            
+                            Screamer.SetActive(true);
                         }
                         else
                         {
