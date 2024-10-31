@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      door_knock-Sheet_0: -924700817303091031
+      door_knock-Sheet_1: -4297795285037124799
+      door_knock-Sheet_10: -5267799703390947308
+      door_knock-Sheet_11: 6816010740665011600
+      door_knock-Sheet_12: -4641927731842270455
+      door_knock-Sheet_13: -3376720163791572927
+      door_knock-Sheet_14: 2616884578033151645
+      door_knock-Sheet_15: -3475146978020904869
+      door_knock-Sheet_16: 4323253697142772128
+      door_knock-Sheet_2: 8611363593579242231
+      door_knock-Sheet_3: -416430654227512762
+      door_knock-Sheet_4: -5292317458104227501
+      door_knock-Sheet_5: 981596617380599623
+      door_knock-Sheet_6: -8380239657558945788
+      door_knock-Sheet_7: 1795863789906306912
+      door_knock-Sheet_8: -3940221316141672325
+      door_knock-Sheet_9: 6909984637823667688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
