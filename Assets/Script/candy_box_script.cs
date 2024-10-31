@@ -98,7 +98,6 @@ public class candy_box_script : MonoBehaviour
         }
         if (timer > 1)
         {
-            print("gegFQFCC");
             animator.SetBool("anim_play", false);
         }
 
