@@ -16,7 +16,7 @@ public class camera_script : MonoBehaviour
     private bool zoomEnCour = false;
     private bool dezoomEnCour = false;
     private UnityEngine.Vector3 target;
-    private int speed = 10;
+    private int speed = 100;
 
     [SerializeField] private Camera cam;
 
