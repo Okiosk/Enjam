@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     public bool inQTE = false;
     void Start()
     {
-
+        
     }
     void Update()
     {
