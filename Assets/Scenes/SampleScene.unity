@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 296017151}
   rigidBody: {fileID: 296017149}
-  speed: 1500
+  speed: 400
   candyCarry: none
   lives: 5
   winTimer: 3
@@ -3683,17 +3683,45 @@ PrefabInstance:
       propertyPath: childRenderer
       value: 
       objectReference: {fileID: 1317940440}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_Size.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_Size.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1374664639531634746, guid: 85acb30add9998346bd58420eb428f55, type: 3}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7814530664338794694, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_Name
       value: Child
       objectReference: {fileID: 0}
     - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 3.49
       objectReference: {fileID: 0}
     - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3755,7 +3783,7 @@ Animator:
   m_GameObject: {fileID: 821871769}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e068cfff8b390fe47833b479ebcf2496, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9ebdbc3ba8b48704a951cef8677b2a3f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
