@@ -57,8 +57,6 @@ public class DoorScript : MonoBehaviour
 
         }
 
-        
-
         if (isOpen || !child.childIsWaiting)
         {
             animator.SetBool("knock_normal", false);
@@ -141,8 +139,13 @@ public class DoorScript : MonoBehaviour
         openDoor.SetActive(isOpen);
         _renderer.enabled = !isOpen;
         if (isOpen)
+        {
             OpenDoorSound.Play();
+        }
         else
+        {
             CloseDoorSound.Play();
+            doorTimer = maxDoorTimer;
+        }
     }
 }
