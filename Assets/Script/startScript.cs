@@ -8,22 +8,14 @@ public class startScript : MonoBehaviour
     void Start()
     {
 
-        Debug.Log("sdsdsdsdsdsdsdsdsdsdsdsd");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape)) 
+        if (Input.GetKey(KeyCode.Return)) 
         {
-            Debug.Log("qrrgzesg");
             SceneManager.LoadScene("Scenes/SampleScene");
         }
-
-    }
-    public void change()
-    {
-
-        SceneManager.LoadScene("Scenes/SampleScene");
     }
 }

@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ghost1_happy-Sheet_0: -1374664639531634746
+      ghost1_happy-Sheet_1: -9136505497203889664
+      ghost1_happy-Sheet_2: -1525863662869718897
+      ghost1_happy-Sheet_3: -7561068874911927359
+      ghost1_happy-Sheet_4: 944109315352875195
+      ghost1_happy-Sheet_5: 9059545214728519975
+      ghost1_happy-Sheet_6: -2905176868628674431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
