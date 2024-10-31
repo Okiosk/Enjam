@@ -7,7 +7,7 @@ using System.Numerics;
 public class camera_script : MonoBehaviour
 {
     private float zoom;
-    private float zoomMultiplier = 0.008f;
+    private float zoomMultiplier = 0.08f;
     private float minZoom = 2f;
     private float maxZoom = 8f;
     private float velocity = 1f;
@@ -16,7 +16,7 @@ public class camera_script : MonoBehaviour
     private bool zoomEnCour = false;
     private bool dezoomEnCour = false;
     private UnityEngine.Vector3 target;
-    private int speed = 8;
+    private int speed = 10;
 
     [SerializeField] private Camera cam;
 
