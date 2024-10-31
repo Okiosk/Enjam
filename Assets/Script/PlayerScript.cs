@@ -27,7 +27,7 @@ public class PlayerScript : MonoBehaviour
     }
     void Update()
     {
-        timergen.text = (winTimer*60).ToString();
+        timergen.text = ((int)(winTimer*60)).ToString();
 
         if (winTimer > 0)
         {
