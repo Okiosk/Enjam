@@ -115,7 +115,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -153,7 +153,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -196,10 +196,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
+        width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.46770978, y: 0.511008}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: door_knock_mad-Sheet_1
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 0
-        width: 34
+        width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.45915887, y: 0.50366956}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,59 +235,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock_mad-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 23
-        width: 12
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69e75ee07877d1b60800000000000000
-      internalID: 7718456758337109654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 16
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc6cbf40b165b41c0800000000000000
-      internalID: -4518423127088445747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: door_knock_mad-Sheet_4
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,12 +260,12 @@ TextureImporter:
       name: door_knock_mad-Sheet_5
       rect:
         serializedVersion: 2
-        x: 143
+        x: 144
         y: 0
-        width: 34
+        width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.43528417, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,59 +279,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock_mad-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 23
-        width: 12
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecd50f90b5c384190800000000000000
-      internalID: -7978060378180395570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 16
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1d1c2c77b4431b30800000000000000
-      internalID: 4256821627648220446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: door_knock_mad-Sheet_8
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -392,12 +304,12 @@ TextureImporter:
       name: door_knock_mad-Sheet_9
       rect:
         serializedVersion: 2
-        x: 239
+        x: 240
         y: 0
-        width: 34
+        width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4527641, y: 0.5000002}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -411,59 +323,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock_mad-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 23
-        width: 12
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 649c529bb0ee32de0800000000000000
-      internalID: -1358980928417445562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 16
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2414ddd2f4ca56650800000000000000
-      internalID: 6225571515981447490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: door_knock_mad-Sheet_12
       rect:
         serializedVersion: 2
         x: 288
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -482,10 +350,10 @@ TextureImporter:
         serializedVersion: 2
         x: 336
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -502,12 +370,12 @@ TextureImporter:
       name: door_knock_mad-Sheet_14
       rect:
         serializedVersion: 2
-        x: 383
+        x: 384
         y: 0
-        width: 34
+        width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4422667, y: 0.4924556}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,59 +389,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock_mad-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 23
-        width: 12
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2fea7945cde3f6430800000000000000
-      internalID: 3778307728420089586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 418
-        y: 16
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f5e37c1efd10fe30800000000000000
-      internalID: 4535157801998345713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: door_knock_mad-Sheet_17
       rect:
         serializedVersion: 2
         x: 432
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -592,10 +416,10 @@ TextureImporter:
         serializedVersion: 2
         x: 480
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -612,12 +436,12 @@ TextureImporter:
       name: door_knock_mad-Sheet_19
       rect:
         serializedVersion: 2
-        x: 527
+        x: 528
         y: 0
-        width: 34
+        width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.40379488, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -630,165 +454,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_20
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 23
-        width: 12
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4264bdc2f6643d740800000000000000
-      internalID: 5175557840086713892
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 562
-        y: 16
-        width: 6
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b9bac9bd829a2170800000000000000
-      internalID: 8154491212712819125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 5
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 03e1497ec74854b40800000000000000
-      internalID: 5423886998233685552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 5
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5abfb2b4487fec280800000000000000
-      internalID: -9021000856007607387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 5
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a901dbd3328aa360800000000000000
-      internalID: 7181695715038529956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 5
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0c59117cc641dd30800000000000000
-      internalID: 4454419350330891274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock_mad-Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 5
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b1488f14990a9d7a0800000000000000
-      internalID: -6351869219332127717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b1d2921173d0aee45b771129b510dbcc
     internalID: 0
     vertices: []
     indices: 
