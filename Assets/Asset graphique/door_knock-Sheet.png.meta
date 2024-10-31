@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -153,10 +153,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,10 +175,10 @@ TextureImporter:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 39
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,10 +197,10 @@ TextureImporter:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: door_knock-Sheet_3
       rect:
         serializedVersion: 2
-        x: 143
+        x: 144
         y: 0
-        width: 39
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -239,34 +239,12 @@ TextureImporter:
       name: door_knock-Sheet_4
       rect:
         serializedVersion: 2
-        x: 174
-        y: 19
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 359691fcf49ed86b0800000000000000
-      internalID: -5292317458104227501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock-Sheet_5
-      rect:
-        serializedVersion: 2
         x: 192
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,15 +258,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_6
+      name: door_knock-Sheet_5
       rect:
         serializedVersion: 2
-        x: 239
+        x: 240
         y: 0
-        width: 39
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,37 +280,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 19
-        width: 10
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0672a5e1a903ce810800000000000000
-      internalID: 1795863789906306912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock-Sheet_8
+      name: door_knock-Sheet_6
       rect:
         serializedVersion: 2
         x: 288
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,15 +302,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_9
+      name: door_knock-Sheet_7
       rect:
         serializedVersion: 2
         x: 336
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -368,15 +324,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_10
+      name: door_knock-Sheet_8
       rect:
         serializedVersion: 2
         x: 384
         y: 0
-        width: 39
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -390,15 +346,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_11
+      name: door_knock-Sheet_9
       rect:
         serializedVersion: 2
         x: 432
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -412,15 +368,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_12
+      name: door_knock-Sheet_10
       rect:
         serializedVersion: 2
         x: 480
         y: 0
-        width: 37
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -434,15 +390,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_knock-Sheet_13
+      name: door_knock-Sheet_11
       rect:
         serializedVersion: 2
         x: 528
         y: 0
-        width: 39
+        width: 48
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -455,77 +411,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: door_knock-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 3
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9e2ddba8aa015420800000000000000
-      internalID: 2616884578033151645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 383
-        y: 3
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b50bac05c3cc5cfc0800000000000000
-      internalID: -3475146978020904869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_knock-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 527
-        y: 3
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a1d61cf4584ffb30800000000000000
-      internalID: 4323253697142772128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c4fef32168ad8484491032a192f75f89
     internalID: 0
     vertices: []
     indices: 
@@ -537,21 +427,19 @@ TextureImporter:
     nameFileIdTable:
       door_knock-Sheet_0: -924700817303091031
       door_knock-Sheet_1: -4297795285037124799
-      door_knock-Sheet_10: -5267799703390947308
-      door_knock-Sheet_11: 6816010740665011600
-      door_knock-Sheet_12: -4641927731842270455
-      door_knock-Sheet_13: -3376720163791572927
+      door_knock-Sheet_10: -4641927731842270455
+      door_knock-Sheet_11: -3376720163791572927
       door_knock-Sheet_14: 2616884578033151645
       door_knock-Sheet_15: -3475146978020904869
       door_knock-Sheet_16: 4323253697142772128
       door_knock-Sheet_2: 8611363593579242231
       door_knock-Sheet_3: -416430654227512762
-      door_knock-Sheet_4: -5292317458104227501
-      door_knock-Sheet_5: 981596617380599623
-      door_knock-Sheet_6: -8380239657558945788
-      door_knock-Sheet_7: 1795863789906306912
-      door_knock-Sheet_8: -3940221316141672325
-      door_knock-Sheet_9: 6909984637823667688
+      door_knock-Sheet_4: 981596617380599623
+      door_knock-Sheet_5: -8380239657558945788
+      door_knock-Sheet_6: -3940221316141672325
+      door_knock-Sheet_7: 6909984637823667688
+      door_knock-Sheet_8: -5267799703390947308
+      door_knock-Sheet_9: 6816010740665011600
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
