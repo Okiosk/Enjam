@@ -5,15 +5,16 @@ using UnityEngine;
 public class ChildScript : MonoBehaviour
 {
     private int minTime = 10, maxTime = 10;
-    private float childTimer = 0;
+    public float childTimer = 0;
     private int waitingTime = 12;
-    private float childWaitingTimer;
+    public float childWaitingTimer;
     public bool childIsWaiting = false;
     private string[] colors = {"orange","green","blue","pink"};
     public string color = "none";
     public bool mad = false;
     private int madProbability = 10;
     private bool playerLoosedLife = false;
+    public SpriteRenderer childRenderer;
     public DoorScript door;
     public PlayerScript player;
     public ui_le_script _ui;
@@ -26,11 +27,12 @@ public class ChildScript : MonoBehaviour
     
     void Start()
     {
-        
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         _ui = GameObject.FindGameObjectWithTag("UI").GetComponent<ui_le_script>();
+
         childTimer = Random.Range(minTime, maxTime+1);
+        childRenderer.enabled = false;
     }
 
     void Update()
@@ -45,6 +47,7 @@ public class ChildScript : MonoBehaviour
             {
                 if (!door.isOpen)
                 {
+                    childRenderer.enabled = true;
                     ChildWaitingAtTheDoor();
                 }
             }
@@ -140,6 +143,7 @@ public class ChildScript : MonoBehaviour
         mad = false;
         color = "none";
         DisplayBubble("none");
+        childRenderer.enabled = false;
         childTimer = Random.Range(minTime, maxTime+1);
     }
     public void DisplayBubble(string color)
