@@ -98,7 +98,7 @@ public class candy_box_script : MonoBehaviour
         }
         if (timer > 1)
         {
-            print("gegFQFCC");
+            //print("gegFQFCC");
             animator.SetBool("anim_play", false);
         }
 
@@ -120,6 +120,7 @@ public class candy_box_script : MonoBehaviour
             {
                 pScript.candyCarry = typeCandy;
                 uiScript.changeIcon(typeCandy);
+                animator.SetBool("anim_play",true);
             }
         }
         if (inQTE)
