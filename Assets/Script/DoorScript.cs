@@ -36,12 +36,23 @@ public class DoorScript : MonoBehaviour
 
         if (child.childIsWaiting)
         {
-            animator.SetBool("knock_normal", true);
+            if (child.mad)
+            {
+                animator.SetBool("knock_angry", true);
+            }
+            else
+            {
+                animator.SetBool("knock_normal", true);
+            }
         }
         if (isOpen)
         {
-
             animator.SetBool("knock_normal", false);
+            animator.SetBool("knock_angry", false);
+        }
+        if (!child.mad)
+        {
+            animator.SetBool("knock_angry", false);
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

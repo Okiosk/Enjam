@@ -467,7 +467,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      door_knock_mad-Sheet_0: -3250148222783714396
+      door_knock_mad-Sheet_1: -4335361978726956892
+      door_knock_mad-Sheet_12: -4277548562571140736
+      door_knock_mad-Sheet_13: -233832366937070301
+      door_knock_mad-Sheet_14: -6538959573074204911
+      door_knock_mad-Sheet_17: 6617015537929047372
+      door_knock_mad-Sheet_18: 2417744154430225574
+      door_knock_mad-Sheet_19: 3878951799764850923
+      door_knock_mad-Sheet_4: 2443431438063702698
+      door_knock_mad-Sheet_5: -5725025225353273890
+      door_knock_mad-Sheet_8: -3319113610537408049
+      door_knock_mad-Sheet_9: -5297894041586346381
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
