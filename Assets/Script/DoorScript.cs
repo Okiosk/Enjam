@@ -1,4 +1,4 @@
-using UnityEditor.Experimental.GraphView;
+using TMPro;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour
@@ -8,6 +8,7 @@ public class DoorScript : MonoBehaviour
     private bool playerOnDoor = false;
     public bool isOpen = false;
     private int screamerProbability = 10;
+    
     private float screamerTimer;
     private int maxDoorTimer = 3;
     private float doorTimer;
