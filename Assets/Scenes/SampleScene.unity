@@ -3481,17 +3481,49 @@ PrefabInstance:
       propertyPath: sucetteCandy
       value: 
       objectReference: {fileID: 1742778829}
+    - target: {fileID: 3424139892995507832, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: childRenderer
+      value: 
+      objectReference: {fileID: 1956638033}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_Size.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_Size.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7613315869426512137, guid: 17d0dcb4a745ff448b6e886d808c7e34, type: 3}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7814530664338794694, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_Name
       value: Child
       objectReference: {fileID: 0}
     - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.3206186
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.4375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 3.46
       objectReference: {fileID: 0}
     - target: {fileID: 8909374999200126728, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4494,6 +4526,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &1956638033 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7262280745921695771, guid: c1f8c0596cfd6204d8013bd030014585, type: 3}
+  m_PrefabInstance: {fileID: 1317940435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038439699
 GameObject:
   m_ObjectHideFlags: 0
