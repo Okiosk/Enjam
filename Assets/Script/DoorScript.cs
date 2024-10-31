@@ -14,6 +14,7 @@ public class DoorScript : MonoBehaviour
     public AudioSource OpenDoorSound;
     public AudioSource CloseDoorSound;
     public GameObject Screamer;
+    public AudioSource screamerAudio;
     public ChildScript child;
     public GameObject openDoor;
     public SpriteRenderer _renderer;
@@ -25,17 +26,14 @@ public class DoorScript : MonoBehaviour
 
     void Update()
     {
-        /*if (Screamer.activeSelf && screamerTimer)
+        if (Screamer.activeSelf && screamerTimer > 0)
         {
-            sreamerTimer -= 1 * Time.deltaTime;
+            screamerTimer -= 1 * Time.deltaTime;
         }
         else
         {
             Screamer.SetActive(false);
-        }*/
-
-
-
+        }
         if (child.childIsWaiting)
         {
             if (child.childWaitingTimer > 11)
@@ -74,9 +72,8 @@ public class DoorScript : MonoBehaviour
                     {
                         if (Random.Range(0, screamerProbability) == 0)
                         {
-                            //display the screamer
-                            //play the sound
-                            /*Screamer.SetActive(true);*/
+                            screamerAudio.Play();
+                            Screamer.SetActive(true);
                             screamerTimer = 2;
                         }
                         else
