@@ -8,6 +8,8 @@ public class DoorScript : MonoBehaviour
     private int screamerProbability = 10;
     private int maxDoorTimer = 3;
     private float doorTimer;
+    public AudioSource OpenDoorSound;
+    public AudioSource CloseDoorSound;
     public ChildScript child;
     public GameObject openDoor;
     public SpriteRenderer _renderer;
@@ -93,5 +95,9 @@ public class DoorScript : MonoBehaviour
         isOpen = !isOpen;
         openDoor.SetActive(isOpen);
         _renderer.enabled = !isOpen;
+        if (isOpen)
+            OpenDoorSound.Play();
+        else
+            CloseDoorSound.Play();
     }
 }
