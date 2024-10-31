@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 296017151}
   rigidBody: {fileID: 296017149}
-  speed: 400
+  speed: 600
   candyCarry: none
   lives: 5
   winTimer: 3
