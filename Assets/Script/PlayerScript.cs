@@ -11,7 +11,7 @@ public class PlayerScript : MonoBehaviour
     private float[] velocity = {0,0};
     public string candyCarry = "none";
     public int lives = 5;
-    public float winTimer = 5;
+    public float winTimer = 3;
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
