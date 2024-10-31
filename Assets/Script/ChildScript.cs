@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using System.Collections.Generic;
 
 public class ChildScript : MonoBehaviour
 {
@@ -29,7 +28,6 @@ public class ChildScript : MonoBehaviour
         door = GameObject.FindGameObjectWithTag("Door").GetComponent<DoorScript>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         _ui = GameObject.FindGameObjectWithTag("UI").GetComponent<ui_le_script>();
-
         childTimer = Random.Range(minTime, maxTime+1);
     }
 
