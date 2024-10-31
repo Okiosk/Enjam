@@ -31,7 +31,11 @@ public class PlayerScript : MonoBehaviour
         }
         else
         {
-            //win
+            SceneManager.LoadScene("Scenes/win screen");
+        }
+        if (isDead)
+        {
+            SceneManager.LoadScene("Scenes/loose screen");
         }
         animator.SetBool("moving", false);
         animator.SetFloat("x", velocity[0]);
