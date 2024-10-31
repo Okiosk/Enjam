@@ -7,7 +7,7 @@ public class DoorScript : MonoBehaviour
     public Animator animator;
     private bool playerOnDoor = false;
     public bool isOpen = false;
-    private int screamerProbability = 1;
+    private int screamerProbability = 10;
     private float screamerTimer;
     private int maxDoorTimer = 3;
     private float doorTimer;
