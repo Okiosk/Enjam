@@ -205,6 +205,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9055057750780916010, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.31003937
+      objectReference: {fileID: 0}
+    - target: {fileID: -9055057750780916010, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.019999996
+      objectReference: {fileID: 0}
+    - target: {fileID: -9055057750780916010, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.045019675
+      objectReference: {fileID: 0}
     - target: {fileID: 212632249784803741, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
       propertyPath: Audio
       value: 
@@ -213,6 +225,10 @@ PrefabInstance:
       propertyPath: isOpen
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212632249784803741, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1876465869}
     - target: {fileID: 212632249784803741, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
       propertyPath: openDoor
       value: 
@@ -255,11 +271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8519581236060726328, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2803
+      value: 0.207
       objectReference: {fileID: 0}
     - target: {fileID: 8519581236060726328, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7147
+      value: 3.806
       objectReference: {fileID: 0}
     - target: {fileID: 8519581236060726328, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -303,6 +319,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1863540406571198574, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
       insertIndex: 4
       addedObject: {fileID: 1876465865}
+    - targetCorrespondingSourceObject: {fileID: 1863540406571198574, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876465869}
   m_SourcePrefab: {fileID: 100100000, guid: c6b8215125f705c4c893f873bed63dc6, type: 3}
 --- !u!1 &66280807
 GameObject:
@@ -4452,6 +4471,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1876465869
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573100492}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f616a23b94e542c418d8ac4b4f294f43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2038439699
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,3 +4701,4 @@ SceneRoots:
   - {fileID: 773549143}
   - {fileID: 1728238385}
   - {fileID: 1019217937}
+  - {fileID: 325243198}

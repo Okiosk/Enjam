@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
+
+    public Animator animator;
     private bool playerOnDoor = false;
     public bool isOpen = false;
     private int screamerProbability = 10;
@@ -31,6 +33,17 @@ public class DoorScript : MonoBehaviour
         {
             Screamer.SetActive(false);
         }*/
+
+        if (child.childIsWaiting)
+        {
+            animator.SetBool("knock_normal", true);
+        }
+        if (isOpen)
+        {
+
+            animator.SetBool("knock_normal", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (playerOnDoor)
