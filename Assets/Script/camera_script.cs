@@ -1,6 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.GraphicsBuffer;
 using UnityEngine.Rendering;
 using System.Numerics;
 
